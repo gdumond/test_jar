@@ -12,6 +12,7 @@ traceability_agent:
 output.traceability:
   enabled: true
   hosts: ${LOGSTASH_URL:"ingestion-lumberjack.datasearch.axway.com:453"}
+  proxy_url: "http://10.175.113.4:3160"
   ssl:
     enabled: true
     verification_mode: none
