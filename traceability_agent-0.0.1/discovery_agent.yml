@@ -2,7 +2,7 @@ apimanager:
   host: s00vl9986565.xpf.net.intra
   port: 8076
   discoveryIgnoreTags: private
-  filter:
+  filter: tag.Import == true
   pollInterval: 3600s
   auth:
     username: apiadmin
