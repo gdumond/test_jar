@@ -12,7 +12,7 @@ traceability_agent:
 output.traceability:
   enabled: true
   hosts: ${LOGSTASH_URL:"ingestion-lumberjack.datasearch.axway.com:453"}
-  proxy_url: "sock5://10.175.113.3:1080"
+  proxy_url: socks5://10.175.113.3:1080
   ssl:
     enabled: true
     verification_mode: none
@@ -20,10 +20,11 @@ output.traceability:
     central:
       url: "https://apicentral.axway.com"	
       tenantID: ${CENTRAL_TENANTID:"102899"}
-      proxyUrl: "http://10.175.113.4:3160"
+      proxyUrl: http://10.175.113.4:3160
       deployment: ${CENTRAL_DEPLOYMENT:"prod"}
       environment: ${CENTRAL_ENVIRONMENT:"bnpp-pf-qa-fr"}
       auth:
+        proxyUrl: http://10.175.113.4:3160
         url: ${CENTRAL_AUTH_URL:https://login.axway.com/auth}
         realm: ${CENTRAL_AUTH_REALM:Broker}
         clientId: ${CENTRAL_AUTH_CLIENTID:"DOSA_bdc8116466d24a618f0f3b21dc9a0a5e"}
@@ -70,11 +71,11 @@ logging:
   metrics:
     enabled: false
  # Send all logging output to stderr
-  to_stderr: true
+  to_stderr: false
   # Send all logging output to file
-  to_files: false
+  to_files: true
   files:
-    path: ./logs
+    path: .
     name: traceability_agent.log
     keepfiles: 7
     permissions: 0644
