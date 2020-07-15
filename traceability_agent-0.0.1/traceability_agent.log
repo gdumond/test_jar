@@ -1,0 +1,1068 @@
+2020-06-22T10:58:19.448+0200	INFO	instance/beat.go:607	Home path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent] Config path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent] Data path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data] Logs path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/logs]
+2020-06-22T10:58:19.448+0200	DEBUG	[beat]	instance/beat.go:659	Beat metadata path: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/meta.json
+2020-06-22T10:58:19.448+0200	INFO	instance/beat.go:615	Beat ID: cb595d1e-9392-4cdb-a42a-af003f173490
+2020-06-22T10:58:19.448+0200	DEBUG	[seccomp]	seccomp/seccomp.go:117	Loading syscall filter	{"seccomp_filter": {"no_new_privs":true,"flag":"tsync","policy":{"default_action":"errno","syscalls":[{"names":["accept","accept4","access","arch_prctl","bind","brk","clock_gettime","clone","close","connect","dup","dup2","epoll_create","epoll_create1","epoll_ctl","epoll_pwait","epoll_wait","exit","exit_group","fchdir","fchmod","fchown","fcntl","fdatasync","flock","fstat","fstatfs","fsync","ftruncate","futex","getcwd","getdents","getdents64","geteuid","getgid","getpeername","getpid","getppid","getrandom","getrlimit","getrusage","getsockname","getsockopt","gettid","gettimeofday","getuid","inotify_add_watch","inotify_init1","inotify_rm_watch","ioctl","kill","listen","lseek","lstat","madvise","mincore","mkdirat","mmap","mprotect","munmap","nanosleep","newfstatat","open","openat","pipe","pipe2","poll","ppoll","pread64","pselect6","pwrite64","read","readlink","readlinkat","recvfrom","recvmmsg","recvmsg","rename","renameat","rt_sigaction","rt_sigprocmask","rt_sigreturn","sched_getaffinity","sched_yield","sendfile","sendmmsg","sendmsg","sendto","set_robust_list","setitimer","setsockopt","shutdown","sigaltstack","socket","splice","stat","statfs","sysinfo","tgkill","time","tkill","uname","unlink","unlinkat","wait4","waitid","write","writev"],"action":"allow"}]}}}
+2020-06-22T10:58:19.448+0200	INFO	[seccomp]	seccomp/seccomp.go:124	Syscall filter successfully installed
+2020-06-22T10:58:19.448+0200	INFO	[beat]	instance/beat.go:903	Beat info	{"system_info": {"beat": {"path": {"config": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent", "data": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data", "home": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent", "logs": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/logs"}, "type": "traceability_agent", "uuid": "cb595d1e-9392-4cdb-a42a-af003f173490"}}}
+2020-06-22T10:58:19.448+0200	INFO	[beat]	instance/beat.go:912	Build info	{"system_info": {"build": {"commit": "unknown", "libbeat": "7.4.1", "time": "1754-08-30T22:43:41.128Z", "version": "0.0.6-13c45eae"}}}
+2020-06-22T10:58:19.448+0200	INFO	[beat]	instance/beat.go:915	Go runtime info	{"system_info": {"go": {"os":"linux","arch":"amd64","max_procs":1,"version":"go1.12.17"}}}
+2020-06-22T10:58:19.449+0200	INFO	[beat]	instance/beat.go:919	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2020-06-19T09:33:12+02:00","containerized":false,"name":"s00vl9986565","ip":["127.0.0.1/8","10.244.82.13/24"],"kernel_version":"3.10.0-957.12.2.el7.x86_64","mac":["00:50:56:00:ac:2d"],"os":{"family":"redhat","platform":"rhel","name":"Red Hat Enterprise Linux Server","version":"7.6 (Maipo)","major":7,"minor":6,"patch":0,"codename":"Maipo"},"timezone":"CEST","timezone_offset_sec":7200,"id":"4048a22fffed4fea9531327e3da05f32"}}}
+2020-06-22T10:58:19.450+0200	INFO	[beat]	instance/beat.go:948	Process info	{"system_info": {"process": {"capabilities": {"inheritable":null,"permitted":null,"effective":null,"bounding":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend"],"ambient":null}, "cwd": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent", "exe": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/traceability_agent", "name": "traceability_ag", "pid": 24949, "ppid": 22660, "seccomp": {"mode":"filter"}, "start_time": "2020-06-22T10:58:19.099+0200"}}}
+2020-06-22T10:58:19.450+0200	INFO	instance/beat.go:292	Setup Beat: traceability_agent; Version: 0.0.6-13c45eae
+2020-06-22T10:58:19.450+0200	DEBUG	[beat]	instance/beat.go:318	Initializing output plugins
+2020-06-22T10:58:19.450+0200	INFO	transport/proxy.go:70	proxy host: '10.175.113.3:1080'
+2020-06-22T10:58:21.062+0200	DEBUG	[apigw]	apigw/eventprocessor.go:62	Event Processor Created with EnvironmentID: e4e6300771cab6270171cbc000540055
+2020-06-22T10:58:21.063+0200	DEBUG	[publisher]	pipeline/consumer.go:137	start pipeline event consumer
+2020-06-22T10:58:21.063+0200	INFO	[publisher]	pipeline/module.go:97	Beat name: s00vl9986565
+2020-06-22T10:58:21.063+0200	ERROR	fileset/modules.go:125	Not loading modules. Module directory not found: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/module
+2020-06-22T10:58:21.063+0200	WARN	beater/filebeat.go:152	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2020-06-22T10:58:21.063+0200	INFO	instance/beat.go:422	traceability_agent start running.
+2020-06-22T10:58:21.063+0200	DEBUG	[test]	registrar/migrate.go:159	isFile(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry) -> false
+2020-06-22T10:58:21.063+0200	DEBUG	[test]	registrar/migrate.go:159	isFile() -> false
+2020-06-22T10:58:21.063+0200	DEBUG	[test]	registrar/migrate.go:152	isDir(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat) -> true
+2020-06-22T10:58:21.063+0200	DEBUG	[test]	registrar/migrate.go:159	isFile(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/meta.json) -> true
+2020-06-22T10:58:21.064+0200	DEBUG	[registrar]	registrar/migrate.go:51	Registry type '0' found
+2020-06-22T10:58:21.064+0200	DEBUG	[registrar]	registrar/registrar.go:125	Registry file set to: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json
+2020-06-22T10:58:21.064+0200	INFO	registrar/registrar.go:145	Loading registrar data from /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json
+2020-06-22T10:58:21.064+0200	INFO	registrar/registrar.go:152	States Loaded from registrar: 37
+2020-06-22T10:58:21.064+0200	WARN	beater/filebeat.go:368	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2020-06-22T10:58:21.064+0200	INFO	crawler/crawler.go:72	Loading Inputs: 1
+2020-06-22T10:58:21.065+0200	DEBUG	[input]	log/config.go:204	recursive glob enabled
+2020-06-22T10:58:21.065+0200	DEBUG	[input]	log/input.go:164	exclude_files: []. Number of stats: 37
+2020-06-22T10:58:21.065+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:21.065+0200	DEBUG	[registrar]	registrar/registrar.go:278	Starting Registrar
+2020-06-22T10:58:21.065+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.065+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.065+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.065+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.065+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.066+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409274-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log Offset:699 Timestamp:2020-06-22 10:57:13.724250667 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409274-64805} TimeSeries:false}
+2020-06-22T10:58:21.066+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:21.066+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:459315-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:279 Timestamp:2020-06-22 10:57:13.748238758 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:459315-64805} TimeSeries:false}
+2020-06-22T10:58:21.066+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.066+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409317-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:977 Timestamp:2020-06-22 10:57:13.759980309 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64805} TimeSeries:false}
+2020-06-22T10:58:21.066+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:21.066+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.066+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.066+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409274-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log Offset:699 Timestamp:2020-06-22 10:57:13.807918694 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409274-64810} TimeSeries:false}
+2020-06-22T10:58:21.066+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:21.079+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.079+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.079+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.079+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.079+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.079+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.080+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:414897-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:279 Timestamp:2020-06-22 10:57:13.821073708 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.080+0200	DEBUG	[input]	file/states.go:68	New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.093+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.093+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.093+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.093+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.093+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.094+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.094+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409317-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:0 Timestamp:2020-06-22 10:57:13.837023361 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:185	input with previous states loaded: 6
+2020-06-22T10:58:21.094+0200	INFO	log/input.go:152	Configured paths: [/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log]
+2020-06-22T10:58:21.094+0200	INFO	input/input.go:114	Starting input of type: log; ID: 7013895810890088246 
+2020-06-22T10:58:21.094+0200	INFO	crawler/crawler.go:106	Loading and starting Inputs completed. Enabled inputs: 1
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:191	Start next scan
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log, offset: 699
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:565	File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 279
+2020-06-22T10:58:21.094+0200	DEBUG	[input]	log/input.go:520	Resuming harvesting of file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 279, new size: 39733
+2020-06-22T10:58:21.095+0200	DEBUG	[harvester]	log/harvester.go:489	Set previous offset for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log. Offset: 279 
+2020-06-22T10:58:21.095+0200	DEBUG	[harvester]	log/harvester.go:480	Setting offset for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log. Offset: 279 
+2020-06-22T10:58:21.096+0200	DEBUG	[harvester]	log/harvester.go:182	Harvester setup successful. Line terminator: 1
+2020-06-22T10:58:21.106+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.106+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.106+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.106+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.106+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.106+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.106+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b375f0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:279 Timestamp:2020-06-22 10:58:21.094537931 +0200 CEST m=+1.669254892 TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.106+0200	DEBUG	[harvester]	log/harvester.go:399	Update state: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 279
+2020-06-22T10:58:21.106+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.106+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 0
+2020-06-22T10:58:21.106+0200	DEBUG	[input]	log/input.go:520	Resuming harvesting of file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 0, new size: 977
+2020-06-22T10:58:21.107+0200	INFO	log/harvester.go:251	Harvester started for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "log": {
+    "offset": 279,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816101239, \"path\":\"/fr/keypeople/v2/api/categoriesNews/community/9653\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":61, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"status\":\"success\", \"duration\":55}], \"customMsgAtts\":{}, \"correlationId\":\"e571f05ecdc8623065beda44\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/categoriesNews/community/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1648, \"bytesReceived\":361, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35354\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816101178, \"duration\":61, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/categoriesNews/community/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":483, \"bytesReceived\":1528, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53898\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816101195, \"duration\":38, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "log": {
+    "offset": 1914,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816107273, \"path\":\"/fr/keypeople/v2/api/categoriesNews/community/17201\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":37, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"status\":\"success\", \"duration\":31}], \"customMsgAtts\":{}, \"correlationId\":\"eb71f05ecec81b381ffbdd40\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/categoriesNews/community/17201\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":676, \"bytesReceived\":362, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35356\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816107235, \"duration\":38, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/categoriesNews/community/17201\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":484, \"bytesReceived\":555, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53902\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816107246, \"duration\":25, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}"
+}
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "log": {
+    "offset": 3550,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816107554, \"path\":\"/fr/keypeople/v2/api/news/current-user/communities/17201\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":172, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"status\":\"success\", \"duration\":167}], \"customMsgAtts\":{}, \"correlationId\":\"eb71f05ecfc817861ae40649\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/news/current-user/communities/17201\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":629, \"bytesReceived\":367, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35358\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816107382, \"duration\":172, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/news/current-user/communities/17201\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":489, \"bytesReceived\":507, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53904\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816107391, \"duration\":163, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 5217,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816107886, \"path\":\"/fr/keypeople/v2/api/categoriesNews/community/9653\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":25, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"status\":\"success\", \"duration\":21}], \"customMsgAtts\":{}, \"correlationId\":\"eb71f05ed1c81a4f6cdce84e\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/categoriesNews/community/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1648, \"bytesReceived\":361, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35362\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816107861, \"duration\":25, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/categoriesNews/community/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":483, \"bytesReceived\":1528, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53908\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816107868, \"duration\":16, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"findAllNewsCategoriesByCommunityUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent"
+  },
+  "log": {
+    "offset": 6852,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816108325, \"path\":\"/fr/keypeople/v2/api/news/current-user/communities/9653\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":468, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"status\":\"success\", \"duration\":462}], \"customMsgAtts\":{}, \"correlationId\":\"eb71f05ed0c857ad4c729909\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/news/current-user/communities/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":37360, \"bytesReceived\":366, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35360\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816107857, \"duration\":468, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/news/current-user/communities/9653\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":488, \"bytesReceived\":37306, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53906\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816107867, \"duration\":453, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getNewsByCommunityAndCategoryAndUserUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}"
+}
+2020-06-22T10:58:21.107+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109039, \"path\":\"/fr/keypeople/v2/api/files/\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":2, \"status\":\"failure\", \"serviceContexts\":[], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed5c8492a5b729ca5\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/\", \"status\":403, \"statustext\":\"No match found for request\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":385, \"bytesReceived\":338, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35370\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109037, \"duration\":2, \"serviceName\":null, \"subject\":\"b17c5d42-68a8-4adc-8cbc-a4cfa8dc5d5a\", \"operation\":null, \"type\":\"http\", \"finalStatus\":\"Fail\"}]}",
+  "log": {
+    "offset": 8520,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.107Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 9277
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109133, \"path\":\"/fr/keypeople/v2/api/files/news_24052_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":118, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":95}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed3c85a34fd1baa0b\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_24052_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":29427, \"bytesReceived\":356, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35366\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109015, \"duration\":118, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_24052_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":478, \"bytesReceived\":29358, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53912\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109048, \"duration\":78, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 10826,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109135, \"path\":\"/fr/keypeople/v2/api/files/news_9002_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":123, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":101}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed2c836f0a51a3157\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_9002_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":83250, \"bytesReceived\":355, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35364\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109012, \"duration\":123, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_9002_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":477, \"bytesReceived\":83292, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53910\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109042, \"duration\":78, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 12373,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109150, \"path\":\"/fr/keypeople/v2/api/files/news_24506_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":115, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":110}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed4c84fadd39a03db\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_24506_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":80407, \"bytesReceived\":356, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35368\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109035, \"duration\":115, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_24506_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":478, \"bytesReceived\":80441, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53914\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109048, \"duration\":81, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 13923,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109165, \"path\":\"/fr/keypeople/v2/api/files/news_2635_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":124, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":121}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed6c8bf1be5fd64c2\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_2635_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":64194, \"bytesReceived\":355, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35372\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109041, \"duration\":124, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_2635_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":477, \"bytesReceived\":64193, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53916\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109050, \"duration\":95, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 15470,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109172, \"path\":\"/fr/keypeople/v2/api/files/news_2606_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":123, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":119}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed7c87d261d3bc1b4\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_2606_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":107034, \"bytesReceived\":355, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35374\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109049, \"duration\":123, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_2606_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":477, \"bytesReceived\":107122, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53918\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109063, \"duration\":88, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 17019,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816109180, \"path\":\"/fr/keypeople/v2/api/files/news_9003_photoFr\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":123, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Key People ICP V2\", \"monitor\":true, \"client\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"keypeople\", \"method\":\"getFileUsingGET_1\", \"status\":\"success\", \"duration\":120}], \"customMsgAtts\":{}, \"correlationId\":\"ed71f05ed8c83ec212c8a89d\", \"legs\":[{\"uri\":\"/fr/keypeople/v2/api/files/news_9003_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":55366, \"bytesReceived\":355, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35376\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816109057, \"duration\":123, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/files/news_9003_photoFr\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":477, \"bytesReceived\":55362, \"remoteName\":\"keypeople-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"53920\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816109069, \"duration\":94, \"serviceName\":\"Key People ICP V2\", \"subject\":\"f3cce9bb-7299-4f56-8411-b99125e9e292\", \"operation\":\"getFileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1592816111150, "diskUsed":70, "instCpu":2, "sysCpu":7, "instMem":985064, "sysMem":7774724, "sysMemTotal":7977904}
+2020-06-22T10:58:21.108+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b375f0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:18705 Timestamp:2020-06-22 10:58:21.094537931 +0200 CEST m=+1.669254892 TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 18705,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816129284, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":10, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"org\":null, \"app\":null, \"method\":\"Client Credentials\", \"status\":\"success\", \"duration\":10}], \"customMsgAtts\":{}, \"correlationId\":\"0172f05ed9c8d351adbfaad2\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":554, \"bytesReceived\":506, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"38094\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816129274, \"duration\":10, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"operation\":\"Client Credentials\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "log": {
+    "offset": 19639,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816129548, \"path\":\"/fr/postage_notification/v1\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":120, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Postage Notification\", \"monitor\":true, \"client\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"org\":\"Wordline Demat\", \"app\":\"netdemat_v2_rce\", \"method\":\"posterNotificationEvenement\", \"status\":\"success\", \"duration\":114}], \"customMsgAtts\":{}, \"correlationId\":\"0172f05edac876b8559da753\", \"legs\":[{\"uri\":\"/fr/postage_notification/v1\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":625, \"bytesReceived\":1418, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35386\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816129428, \"duration\":120, \"serviceName\":\"Postage Notification\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"posterNotificationEvenement\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/eventsav/services/PostageNotificationEvenementServiceV1\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1462, \"bytesReceived\":486, \"remoteName\":\"hmbackwas1.xpf.net.intra\", \"remoteAddr\":\"10.177.3.157\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"18326\", \"localPort\":\"46780\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816129436, \"duration\":112, \"serviceName\":\"Postage Notification\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"posterNotificationEvenement\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1592816171167, "diskUsed":70, "instCpu":1, "sysCpu":3, "instMem":985048, "sysMem":7776316, "sysMemTotal":7977904}
+2020-06-22T10:58:21.108+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b375f0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:21348 Timestamp:2020-06-22 10:58:21.094537931 +0200 CEST m=+1.669254892 TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 21348
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816200224, \"path\":\"/fr/pricingsimulation/v3\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":49, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Pricing Simulation\", \"monitor\":true, \"client\":\"6e03a075-6fc2-4345-9686-edf6269a700c\", \"org\":\"BNPP PF - TEC\", \"app\":\"Test PCBF CB\", \"method\":\"WPAP\", \"status\":\"success\", \"duration\":28}], \"customMsgAtts\":{}, \"correlationId\":\"4872f05edbc85b2b3930c636\", \"legs\":[{\"uri\":\"/fr/pricingsimulation/v3\", \"status\":200, \"statustext\":\"OK                              \", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":4733, \"bytesReceived\":4079, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"40467\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816200175, \"duration\":49, \"serviceName\":\"Pricing Simulation\", \"subject\":\"6e03a075-6fc2-4345-9686-edf6269a700c\", \"operation\":\"WPAP\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/WPAP3\", \"status\":200, \"statustext\":\"OK                              \", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":3938, \"bytesReceived\":4606, \"remoteName\":\"delta-n.fr.net.intra\", \"remoteAddr\":\"159.50.158.9\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"8080\", \"localPort\":\"53882\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816200203, \"duration\":16, \"serviceName\":\"Pricing Simulation\", \"subject\":\"6e03a075-6fc2-4345-9686-edf6269a700c\", \"operation\":\"WPAP\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 22836,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816208440, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":7, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"org\":null, \"app\":null, \"method\":\"Client Credentials\", \"status\":\"success\", \"duration\":7}], \"customMsgAtts\":{}, \"correlationId\":\"5072f05edcc8e5f6f0ba4260\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":554, \"bytesReceived\":506, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"38472\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816208432, \"duration\":9, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"operation\":\"Client Credentials\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.108+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 23767,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816208814, \"path\":\"/fr/postage_notification/v1\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":201, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Postage Notification\", \"monitor\":true, \"client\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"org\":\"Wordline Demat\", \"app\":\"netdemat_v2_rce\", \"method\":\"posterNotificationEvenement\", \"status\":\"success\", \"duration\":189}], \"customMsgAtts\":{}, \"correlationId\":\"5072f05eddc829e118aa7a32\", \"legs\":[{\"uri\":\"/fr/postage_notification/v1\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":625, \"bytesReceived\":1418, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35764\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816208613, \"duration\":201, \"serviceName\":\"Postage Notification\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"posterNotificationEvenement\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/eventsav/services/PostageNotificationEvenementServiceV1\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1462, \"bytesReceived\":486, \"remoteName\":\"hmbackwas1.xpf.net.intra\", \"remoteAddr\":\"10.177.3.157\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"18326\", \"localPort\":\"47174\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816208626, \"duration\":187, \"serviceName\":\"Postage Notification\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"posterNotificationEvenement\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.108Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  },
+  "log": {
+    "offset": 25337,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816218304, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":36, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"org\":null, \"app\":null, \"method\":\"Client Credentials\", \"status\":\"success\", \"duration\":36}], \"customMsgAtts\":{}, \"correlationId\":\"5a72f05edec85f71b4925c14\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":554, \"bytesReceived\":506, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"38480\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816218268, \"duration\":36, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"2aa990a0-21d1-40ce-a3bf-7c75bfb81f04\", \"operation\":\"Client Credentials\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 26271,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816226507, \"path\":\"/fr/edit_document_service/v1\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":7935, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"EditDocumentService\", \"monitor\":true, \"client\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"org\":\"Wordline Demat\", \"app\":\"netdemat_v2_rce\", \"method\":\"editMandateDocument\", \"status\":\"success\", \"duration\":7925}], \"customMsgAtts\":{}, \"correlationId\":\"5a72f05edfc801bbec2aa1e2\", \"legs\":[{\"uri\":\"/fr/edit_document_service/v1\", \"status\":500, \"statustext\":\"Internal Server Error\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":916, \"bytesReceived\":1557, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"35772\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816218572, \"duration\":7935, \"serviceName\":\"EditDocumentService\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"editMandateDocument\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/dossiersouscription/services/EditDocumentService\", \"status\":500, \"statustext\":\"Internal Server Error\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1593, \"bytesReceived\":777, \"remoteName\":\"hmbackwas1.xpf.net.intra\", \"remoteAddr\":\"10.177.3.157\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"16580\", \"localPort\":\"56858\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816218583, \"duration\":7924, \"serviceName\":\"EditDocumentService\", \"subject\":\"d0447a08-6467-487d-a5c3-78d70a9b1953\", \"operation\":\"editMandateDocument\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1592816231194, "diskUsed":70, "instCpu":1, "sysCpu":3, "instMem":985048, "sysMem":7776864, "sysMemTotal":7977904}
+2020-06-22T10:58:21.109+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b375f0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:27990 Timestamp:2020-06-22 10:58:21.094537931 +0200 CEST m=+1.669254892 TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816243980, \"path\":\"/fr/simulation_credit/v1/simulation_credit\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":50, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Simulation Credit Multi-Prets\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"SimulationCredit_Calculer\", \"status\":\"success\", \"duration\":43}], \"customMsgAtts\":{}, \"correlationId\":\"7372f05ee2c8fe2460d933bf\", \"legs\":[{\"uri\":\"/fr/simulation_credit/v1/simulation_credit\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1462, \"bytesReceived\":843, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52268\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816243930, \"duration\":50, \"serviceName\":\"Simulation Credit Multi-Prets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"SimulationCredit_Calculer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/v1/simulation_credit\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":804, \"bytesReceived\":1324, \"remoteName\":\"apisimulationcredit-rf-pfi.staging.echonet\", \"remoteAddr\":\"10.177.32.84\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"443\", \"localPort\":\"45212\", \"sslsubject\":\"/O=Group/OU=Applications/title=certis/CN=apisimulationcredit-rf-pfi.staging.echonet\", \"leg\":1, \"timestamp\":1592816243937, \"duration\":42, \"serviceName\":\"Simulation Credit Multi-Prets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"SimulationCredit_Calculer\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "log": {
+    "offset": 27990,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816244363, \"path\":\"/fr/calcul_taux/v1/calcul_taux_effectif_global\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":36, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Calcul Taux Credit multiPrets\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"calcul_taux_effectif_global\", \"status\":\"success\", \"duration\":31}], \"customMsgAtts\":{}, \"correlationId\":\"7472f05ee3c8254bc6f7d973\", \"legs\":[{\"uri\":\"/fr/calcul_taux/v1/calcul_taux_effectif_global\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1114, \"bytesReceived\":1129, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52274\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816244326, \"duration\":37, \"serviceName\":\"Calcul Taux Credit multiPrets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"calcul_taux_effectif_global\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/v1/calcul_taux_effectif_global\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1090, \"bytesReceived\":975, \"remoteName\":\"apicalcultaux-rf-pfi.staging.echonet\", \"remoteAddr\":\"10.177.32.80\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"443\", \"localPort\":\"42946\", \"sslsubject\":\"/O=Group/OU=Applications/title=certis/CN=apicalcultaux-rf-pfi.staging.echonet\", \"leg\":1, \"timestamp\":1592816244334, \"duration\":29, \"serviceName\":\"Calcul Taux Credit multiPrets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"calcul_taux_effectif_global\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "log": {
+    "offset": 29684,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "log": {
+    "offset": 31391,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816244711, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":10, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"f53470ef-399b-423b-922d-7c0e7d11296a\", \"org\":null, \"app\":null, \"method\":\"JWT Bearer\", \"status\":\"success\", \"duration\":10}], \"customMsgAtts\":{}, \"correlationId\":\"7472f05ee4c8e28c0526bbdf\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":625, \"bytesReceived\":1064, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"50934\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816244700, \"duration\":11, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"f53470ef-399b-423b-922d-7c0e7d11296a\", \"operation\":\"JWT Bearer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "agent": {
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "log": {
+    "offset": 32310,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816244891, \"path\":\"/fr/seddefiimmo/v1/DESService\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":150, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"SED DEFI IMMO\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"expertise\", \"status\":\"success\", \"duration\":144}], \"customMsgAtts\":{}, \"correlationId\":\"7472f05ee5c8b16bbe225817\", \"legs\":[{\"uri\":\"/fr/seddefiimmo/v1/DESService\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":2975, \"bytesReceived\":10620, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52290\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816244741, \"duration\":150, \"serviceName\":\"SED DEFI IMMO\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"expertise\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/defiimmo/ws/DESService\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":10541, \"bytesReceived\":2837, \"remoteName\":\"sedws5-pfc.dev.echonet\", \"remoteAddr\":\"10.244.148.134\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"48466\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816244748, \"duration\":143, \"serviceName\":\"SED DEFI IMMO\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"expertise\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 33792
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816267819, \"path\":\"/fr/simulation_credit/v1/simulation_credit\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":46, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Simulation Credit Multi-Prets\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"SimulationCredit_Calculer\", \"status\":\"success\", \"duration\":41}], \"customMsgAtts\":{}, \"correlationId\":\"8b72f05ee6c8f2b2f98b298f\", \"legs\":[{\"uri\":\"/fr/simulation_credit/v1/simulation_credit\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1462, \"bytesReceived\":843, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52338\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816267773, \"duration\":46, \"serviceName\":\"Simulation Credit Multi-Prets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"SimulationCredit_Calculer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/v1/simulation_credit\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":804, \"bytesReceived\":1324, \"remoteName\":\"apisimulationcredit-rf-pfi.staging.echonet\", \"remoteAddr\":\"10.177.32.84\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"443\", \"localPort\":\"45224\", \"sslsubject\":\"/O=Group/OU=Applications/title=certis/CN=apisimulationcredit-rf-pfi.staging.echonet\", \"leg\":1, \"timestamp\":1592816267780, \"duration\":39, \"serviceName\":\"Simulation Credit Multi-Prets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"SimulationCredit_Calculer\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 35486
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816268171, \"path\":\"/fr/calcul_taux/v1/calcul_taux_effectif_global\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":33, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"Calcul Taux Credit multiPrets\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"calcul_taux_effectif_global\", \"status\":\"success\", \"duration\":27}], \"customMsgAtts\":{}, \"correlationId\":\"8c72f05ee7c871620ec4402b\", \"legs\":[{\"uri\":\"/fr/calcul_taux/v1/calcul_taux_effectif_global\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1113, \"bytesReceived\":1129, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52344\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816268138, \"duration\":33, \"serviceName\":\"Calcul Taux Credit multiPrets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"calcul_taux_effectif_global\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/v1/calcul_taux_effectif_global\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1090, \"bytesReceived\":974, \"remoteName\":\"apicalcultaux-rf-pfi.staging.echonet\", \"remoteAddr\":\"10.177.32.80\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"443\", \"localPort\":\"42958\", \"sslsubject\":\"/O=Group/OU=Applications/title=certis/CN=apicalcultaux-rf-pfi.staging.echonet\", \"leg\":1, \"timestamp\":1592816268145, \"duration\":25, \"serviceName\":\"Calcul Taux Credit multiPrets\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"calcul_taux_effectif_global\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816268395, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":11, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"f53470ef-399b-423b-922d-7c0e7d11296a\", \"org\":null, \"app\":null, \"method\":\"JWT Bearer\", \"status\":\"success\", \"duration\":11}], \"customMsgAtts\":{}, \"correlationId\":\"8c72f05ee8c894501f674125\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":625, \"bytesReceived\":1064, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"51000\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816268384, \"duration\":11, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"f53470ef-399b-423b-922d-7c0e7d11296a\", \"operation\":\"JWT Bearer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "log": {
+    "offset": 37193,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent",
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[processors]	processing/processors.go:183	Publish event: {
+  "@timestamp": "2020-06-22T08:58:21.109Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.6-13c45eae"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 38112
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1592816268622, \"path\":\"/fr/seddefiimmo/v1/DESService\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":193, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"SED DEFI IMMO\", \"monitor\":true, \"client\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"org\":\"BNPP BDDF Fronts Credits\", \"app\":\"Buy my home (Qualif)\", \"method\":\"expertise\", \"status\":\"success\", \"duration\":176}], \"customMsgAtts\":{}, \"correlationId\":\"8c72f05ee9c8ab0c6a90fa64\", \"legs\":[{\"uri\":\"/fr/seddefiimmo/v1/DESService\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":2975, \"bytesReceived\":10625, \"remoteName\":\"10.177.27.225\", \"remoteAddr\":\"10.177.27.225\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52356\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1592816268429, \"duration\":193, \"serviceName\":\"SED DEFI IMMO\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"expertise\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/defiimmo/ws/DESService\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":10546, \"bytesReceived\":2837, \"remoteName\":\"sedws5-pfc.dev.echonet\", \"remoteAddr\":\"10.244.148.134\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"48478\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1592816268447, \"duration\":175, \"serviceName\":\"SED DEFI IMMO\", \"subject\":\"f524882b-2de4-46dc-b510-73db617d2e1b\", \"operation\":\"expertise\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "agent": {
+    "ephemeral_id": "48b97948-2fc1-4e24-8a9c-79ae1d007a76",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.6-13c45eae",
+    "type": "traceability_agent"
+  },
+  "ecs": {
+    "version": "1.2.0"
+  }
+}
+2020-06-22T10:58:21.109+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1592816291210, "diskUsed":70, "instCpu":1, "sysCpu":6, "instMem":985032, "sysMem":7726396, "sysMemTotal":7977904}
+2020-06-22T10:58:21.109+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b375f0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:39733 Timestamp:2020-06-22 10:58:21.094537931 +0200 CEST m=+1.669254892 TTL:-1ns Type:log Meta:map[] FileStateOS:414897-64810} TimeSeries:false}
+2020-06-22T10:58:21.109+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:21.109+0200	DEBUG	[harvester]	log/harvester.go:494	Setting offset for file based on seek: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.110+0200	DEBUG	[harvester]	log/harvester.go:480	Setting offset for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log. Offset: 0 
+2020-06-22T10:58:21.110+0200	DEBUG	[harvester]	log/harvester.go:182	Harvester setup successful. Line terminator: 1
+2020-06-22T10:58:21.110+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:0 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.110+0200	DEBUG	[harvester]	log/harvester.go:399	Update state: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 0
+2020-06-22T10:58:21.110+0200	DEBUG	[input]	log/input.go:212	input states cleaned up. Before: 6, After: 6, Pending: 0
+2020-06-22T10:58:21.110+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409274-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log Offset:699 Timestamp:2020-06-22 10:58:21.065430783 +0200 CEST m=+1.640147745 TTL:0s Type:log Meta:map[] FileStateOS:409274-64805} TimeSeries:false}
+2020-06-22T10:58:21.110+0200	DEBUG	[input]	log/input.go:233	Remove state for file as file removed or renamed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:21.110+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:459315-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:279 Timestamp:2020-06-22 10:58:21.066176408 +0200 CEST m=+1.640893403 TTL:0s Type:log Meta:map[] FileStateOS:459315-64805} TimeSeries:false}
+2020-06-22T10:58:21.110+0200	DEBUG	[input]	log/input.go:233	Remove state for file as file removed or renamed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409317-64805 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:977 Timestamp:2020-06-22 10:58:21.066212802 +0200 CEST m=+1.640929767 TTL:0s Type:log Meta:map[] FileStateOS:409317-64805} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[input]	log/input.go:233	Remove state for file as file removed or renamed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.111+0200	INFO	log/harvester.go:251	Harvester started for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"header", "logCreationTime":"2019-05-23 16:55:55.060", "hostname":"s00vl9986565", "domainId":"1762c52d-de27-4137-8702-ce7a665e9816", "groupId":"group-2", "groupName":"PF-L2-Qualif-762", "serviceId":"instance-7", "serviceName":"GW-hmsecurapig1", "version":"v7.6.2-Internal"}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:282 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1558623355058, "diskUsed":49, "instCpu":0, "sysCpu":3, "instMem":838084, "sysMem":6452584, "sysMemTotal":7978952}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:421 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1558623415083, "diskUsed":49, "instCpu":0, "sysCpu":3, "instMem":838220, "sysMem":6455388, "sysMemTotal":7978952}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:560 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1558623475111, "diskUsed":49, "instCpu":0, "sysCpu":2, "instMem":838220, "sysMem":6457048, "sysMemTotal":7978952}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:699 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1558623535135, "diskUsed":49, "instCpu":0, "sysCpu":3, "instMem":838220, "sysMem":5922788, "sysMemTotal":7978952}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:838 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/harvester.go:409	Drop line as it does not match any of the include patterns {"type":"system", "time":1558623595169, "diskUsed":49, "instCpu":0, "sysCpu":3, "instMem":838220, "sysMem":5926004, "sysMemTotal":7978952}
+2020-06-22T10:58:21.111+0200	DEBUG	[publisher]	pipeline/client.go:220	Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc000b37860 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:977 Timestamp:2020-06-22 10:58:21.106805949 +0200 CEST m=+1.681522904 TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-06-22T10:58:21.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:21.121+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.121+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.121+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.121+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.121+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.121+0200	DEBUG	[acker]	beater/acker.go:64	stateful ack	{"count": 1}
+2020-06-22T10:58:21.135+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.135+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.135+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.135+0200	DEBUG	[registrar]	registrar/registrar.go:346	Registrar states cleaned up. Before: 37, After: 37, Pending: 0
+2020-06-22T10:58:21.135+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.148+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:21.148+0200	DEBUG	[registrar]	registrar/registrar.go:356	Processing 1 events
+2020-06-22T10:58:21.148+0200	DEBUG	[registrar]	registrar/registrar.go:326	Registrar state updates processed. Count: 1
+2020-06-22T10:58:21.148+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:21.161+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:22.107+0200	INFO	pipeline/output.go:95	Connecting to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453)
+2020-06-22T10:58:22.107+0200	DEBUG	[traceability]	traceability/sync.go:95	connect
+2020-06-22T10:58:22.107+0200	WARN	tlscommon/tls_config.go:79	SSL/TLS verifications disabled.
+2020-06-22T10:58:22.110+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:22.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:23.647+0200	ERROR	pipeline/output.go:100	Failed to connect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453): socks connect tcp 10.175.113.3:1080->ingestion-lumberjack.datasearch.axway.com:453: no acceptable authentication methods
+2020-06-22T10:58:23.647+0200	INFO	pipeline/output.go:93	Attempting to reconnect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453) with 1 reconnect attempt(s)
+2020-06-22T10:58:23.647+0200	DEBUG	[traceability]	traceability/sync.go:95	connect
+2020-06-22T10:58:24.110+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:24.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:27.498+0200	ERROR	pipeline/output.go:100	Failed to connect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453): socks connect tcp 10.175.113.3:1080->ingestion-lumberjack.datasearch.axway.com:453: no acceptable authentication methods
+2020-06-22T10:58:27.498+0200	INFO	pipeline/output.go:93	Attempting to reconnect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453) with 2 reconnect attempt(s)
+2020-06-22T10:58:27.498+0200	DEBUG	[traceability]	traceability/sync.go:95	connect
+2020-06-22T10:58:28.110+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:28.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	input/input.go:152	Run input
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:191	Start next scan
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 977
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log, offset: 699
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:565	File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 39733
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:31.111+0200	DEBUG	[state]	file/states.go:118	State removed for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log because of older: 0s
+2020-06-22T10:58:31.111+0200	DEBUG	[state]	file/states.go:118	State removed for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log because of older: 0s
+2020-06-22T10:58:31.111+0200	DEBUG	[state]	file/states.go:118	State removed for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log because of older: 0s
+2020-06-22T10:58:31.111+0200	DEBUG	[input]	log/input.go:212	input states cleaned up. Before: 6, After: 3, Pending: 0
+2020-06-22T10:58:31.588+0200	ERROR	pipeline/output.go:100	Failed to connect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453): socks connect tcp 10.175.113.3:1080->ingestion-lumberjack.datasearch.axway.com:453: no acceptable authentication methods
+2020-06-22T10:58:31.588+0200	INFO	pipeline/output.go:93	Attempting to reconnect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453) with 3 reconnect attempt(s)
+2020-06-22T10:58:31.588+0200	DEBUG	[traceability]	traceability/sync.go:95	connect
+2020-06-22T10:58:36.110+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:36.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	input/input.go:152	Run input
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:191	Start next scan
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log, offset: 699
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:565	File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 39733
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 977
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:41.111+0200	DEBUG	[input]	log/input.go:212	input states cleaned up. Before: 3, After: 3, Pending: 0
+2020-06-22T10:58:42.907+0200	ERROR	pipeline/output.go:100	Failed to connect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453): socks connect tcp 10.175.113.3:1080->ingestion-lumberjack.datasearch.axway.com:453: no acceptable authentication methods
+2020-06-22T10:58:42.907+0200	INFO	pipeline/output.go:93	Attempting to reconnect to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453) with 4 reconnect attempt(s)
+2020-06-22T10:58:42.907+0200	DEBUG	[traceability]	traceability/sync.go:95	connect
+2020-06-22T10:58:46.110+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-06-22T10:58:46.111+0200	DEBUG	[harvester]	log/log.go:107	End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log; Backoff now.
+2020-06-22T10:58:51.111+0200	DEBUG	[input]	input/input.go:152	Run input
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:191	Start next scan
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log, offset: 699
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:565	File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 39733
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:421	Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:511	Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 977
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:563	Harvester for file is still running: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:51.112+0200	DEBUG	[input]	log/input.go:212	input states cleaned up. Before: 3, After: 3, Pending: 0
+2020-06-22T10:58:52.443+0200	DEBUG	[service]	service/service.go:53	Received sigterm/sigint, stopping
+2020-06-22T10:58:52.443+0200	INFO	beater/filebeat.go:443	Stopping filebeat
+2020-06-22T10:58:52.443+0200	INFO	crawler/crawler.go:139	Stopping Crawler
+2020-06-22T10:58:52.443+0200	INFO	crawler/crawler.go:149	Stopping 1 inputs
+2020-06-22T10:58:52.443+0200	INFO	input/input.go:149	input ticker stopped
+2020-06-22T10:58:52.443+0200	INFO	input/input.go:167	Stopping Input: 7013895810890088246
+2020-06-22T10:58:52.443+0200	INFO	log/harvester.go:272	Reader was closed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log. Closing.
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:515	Stopping harvester for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:525	Closing file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:399	Update state: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 977
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:536	harvester cleanup finished for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-06-22T10:58:52.443+0200	INFO	log/harvester.go:272	Reader was closed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log. Closing.
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:515	Stopping harvester for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:525	Closing file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:399	Update state: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 39733
+2020-06-22T10:58:52.443+0200	DEBUG	[harvester]	log/harvester.go:536	harvester cleanup finished for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-06-22T10:58:52.443+0200	DEBUG	[publisher]	pipeline/client.go:162	client: closing acker
+2020-06-22T10:58:52.443+0200	DEBUG	[publisher]	pipeline/client.go:173	client: done closing acker
+2020-06-22T10:58:52.443+0200	DEBUG	[publisher]	pipeline/client.go:176	client: cancelled 0 events
+2020-06-22T10:58:52.443+0200	DEBUG	[publisher]	pipeline/client.go:147	client: wait for acker to finish
+2020-06-22T10:58:52.443+0200	DEBUG	[publisher]	pipeline/client.go:149	client: acker shut down
+2020-06-22T10:58:52.443+0200	INFO	crawler/crawler.go:165	Crawler stopped
+2020-06-22T10:58:52.443+0200	INFO	registrar/registrar.go:367	Stopping Registrar
+2020-06-22T10:58:52.443+0200	INFO	registrar/registrar.go:293	Ending Registrar
+2020-06-22T10:58:52.443+0200	DEBUG	[registrar]	registrar/registrar.go:411	Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent/data/registry/filebeat/data.json (37)
+2020-06-22T10:58:52.462+0200	DEBUG	[registrar]	registrar/registrar.go:404	Registry file updated. 37 states written.
+2020-06-22T10:58:52.462+0200	INFO	instance/beat.go:432	traceability_agent stopped.

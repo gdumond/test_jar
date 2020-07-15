@@ -1,0 +1,83 @@
+################### Beat Configuration #########################
+traceability_agent:
+  inputs:
+    - type: log
+      paths:
+        - /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+        - /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+        - /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+      include_lines: ['.*"type":"transaction".*"type":"http".*']
+
+# Send output to Central Database
+output.traceability:
+  enabled: true
+  hosts: ${LOGSTASH_URL:"ingestion-lumberjack.datasearch.axway.com:453"}
+  proxy_url: socks5://10.175.113.3:1080
+  ssl:
+    enabled: true
+    verification_mode: none
+  agent:
+    central:
+      url: "https://apicentral.axway.com"	
+      tenantID: ${CENTRAL_TENANTID:"102899"}
+      proxyUrl: http://10.175.113.4:3160
+      deployment: ${CENTRAL_DEPLOYMENT:"prod"}
+      environment: ${CENTRAL_ENVIRONMENT:"bnpp-pf-qa-fr"}
+      auth:
+        proxyUrl: http://10.175.113.4:3160
+        url: ${CENTRAL_AUTH_URL:https://login.axway.com/auth}
+        realm: ${CENTRAL_AUTH_REALM:Broker}
+        clientId: ${CENTRAL_AUTH_CLIENTID:"DOSA_bdc8116466d24a618f0f3b21dc9a0a5e"}
+        privateKey: ${CENTRAL_AUTH_PRIVATEKEY:"./keys/private_key.pem"}
+        publicKey: ${CENTRAL_AUTH_PUBLICKEY:"./keys/public_key"}
+        keyPassword: ${CENTRAL_AUTH_KEYPASSWORD:""}
+        timeout: 10s
+      ssl:
+      #  minVersion: ${CENTRAL_SSL_MINVERSION:""}
+      #  maxVersion: ${CENTRAL_SSL_MAXVERSION:""}
+      #  nextProtos: ${CENTRAL_SSL_NEXTPROTOS:""}
+      #  cipherSuites: ${CENTRAL_SSL_CIPHERSUITES:""}
+        insecureSkipVerify: ${CENTRAL_SSL_INSECURESKIPVERIFY:true}
+    apigateway:
+      getHeaders: ${APIGATEWAY_GETHEADERS:true}
+      instanceGroup: ${APIGATEWAY_INSTANCEGROUP:"instance-2"}
+      host: ${APIGATEWAY_HOST:localhost}
+      port: ${APIGATEWAY_PORT:8090}
+      pollInterval: ${APIGATEWAY_POLLINTERVAL:1m}
+      auth:
+        username: ${APIGATEWAY_AUTH_USERNAME:"admin"}
+        password: ${APIGATEWAY_AUTH_PASSWORD:"ChangeMe2019!"}
+      ssl:
+      #  minVersion: ${APIGATEWAY_SSL_MINVERSION:""}
+      #  maxVersion: ${APIGATEWAY_SSL_MAXVERSION:""}
+      #  nextProtos: ${APIGATEWAY_SSL_NEXTPROTOS:""}
+      #  cipherSuites: ${APIGATEWAY_SSL_CIPHERSUITES:""}
+        insecureSkipVerify: ${APIGATEWAY_SSL_INSECURESKIPVERIFY:true}
+    apimanager:
+      host: ${APIMANAGER_HOST:localhost}
+      port: ${APIMANAGER_PORT:8075}
+      pollInterval: ${APIMANAGER_POLLINTERVAL:1m}
+      apiVersion: ${APIMANAGER_APIVERSION:1.3}
+      auth:
+        username: ${APIMANAGER_AUTH_USERNAME:"apiadmin"}
+        password: ${APIMANAGER_AUTH_PASSWORD:"changeme"}
+      ssl:
+      #  minVersion: ${APIMANAGER_SSL_MINVERSION:""}
+      #  maxVersion: ${APIMANAGER_SSL_MAXVERSION:""}
+      #  nextProtos: ${APIMANAGER_SSL_NEXTPROTOS:""}
+      #  cipherSuites: ${APIMANAGER_SSL_CIPHERSUITES:""}
+        insecureSkipVerify: ${APIMANAGER_SSL_INSECURESKIPVERIFY:true}
+logging:
+  metrics:
+    enabled: false
+ # Send all logging output to stderr
+  to_stderr: false
+  # Send all logging output to file
+  to_files: true
+  files:
+    path: .
+    name: traceability_agent.log
+    keepfiles: 7
+    permissions: 0644
+  # Set log level
+  level: debug

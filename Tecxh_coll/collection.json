@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "60240be5-085a-4ea2-9cf0-ab8b239b814c",
+		"name": "v2 QA Ask for token",
+		"description": "Token exchange (test and performance) collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Ask for a token intra Oauth2 (devkit)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f6faf82a-4079-4319-86a1-d5a3c48fa6e2",
+						"exec": [
+							"pm.test(\"Get access_token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.environment.set(\"access_token\", jsonData.access_token );\r",
+							"    pm.environment.set(\"token_type\", jsonData.token_type );\r",
+							"    pm.environment.set(\"scope\", jsonData.scope );\r",
+							"});\r",
+							"\r",
+							"if (pm.response.code === 200) {\r",
+							"    if (pm.response.to.have.header('Content-Type') ){\r",
+							"            if (pm.response.headers.get('Content-Type') == 'text/html; charset=iso-8859-15') {\r",
+							"                pm.test(\"Proxy interception\", function () {\r",
+							"                    pm.expect.fail(true);\r",
+							"                });\r",
+							"            }\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{intra_oauth}}/oauth/token",
+					"host": [
+						"{{intra_oauth}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "Ask for a token with the new OauthZ services (DevKit), generate access token in JWT"
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Token info check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed3c727e-dfae-4a1c-ac35-42c69d00594c",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"});\r",
+							"\r",
+							"if (pm.response.code === 200) {\r",
+							"    if (pm.response.to.have.header('Content-Type') ){\r",
+							"            if (pm.response.headers.get('Content-Type') == 'text/html; charset=iso-8859-15') {\r",
+							"                pm.test(\"Proxy interception\", function () {\r",
+							"                    pm.expect.fail(true);\r",
+							"                });\r",
+							"            }\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic OWJlOGFiZjktYjUzMy00NTNjLWE1NTMtMTA0NzUxOGJjNzUzOjUwNjlmNTNlLTE0ZDctNGU1OS1hM2U1LTMyM2QyNjQ1MDg2OA=="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "urn:ietf:params:oauth:grant-type:token-exchange",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "{{access_token}}",
+							"type": "text"
+						},
+						{
+							"key": "subject_token_type",
+							"value": "urn:ietf:params:oauth:token-type:access_token",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{inter_oauth}}/oauth/tokeninfo",
+					"host": [
+						"{{inter_oauth}}"
+					],
+					"path": [
+						"oauth",
+						"tokeninfo"
+					]
+				},
+				"description": "Check token with the standart OpenInfo endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Token exchange in JWT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "717e54d7-6829-45a2-9fbb-b3d67aac33b6",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.environment.set(\"access_token_exchange\", jsonData.access_token );\r",
+							"});\r",
+							"\r",
+							"if (pm.response.code === 200) {\r",
+							"    if (pm.response.to.have.header('Content-Type') ){\r",
+							"            if (pm.response.headers.get('Content-Type') == 'text/html; charset=iso-8859-15') {\r",
+							"                pm.test(\"Proxy interception\", function () {\r",
+							"                    pm.expect.fail(true);\r",
+							"                });\r",
+							"            }\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{client_secret_toxch}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{client_id_toxch}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "urn:ietf:params:oauth:grant-type:token-exchange",
+							"type": "text"
+						},
+						{
+							"key": "subject_token",
+							"value": "{{access_token}}",
+							"type": "text"
+						},
+						{
+							"key": "subject_token_type",
+							"value": "urn:ietf:params:oauth:token-type:access_token",
+							"type": "text"
+						},
+						{
+							"key": "requested_token_type",
+							"value": "urn:ietf:params:oauth:token-type:access_token",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						},
+						{
+							"key": "ressource",
+							"value": "Axway API Gateway",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{intra_oauth}}/oauth2/token",
+					"host": [
+						"{{intra_oauth}}"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				},
+				"description": "Exhange token, generate new access token in JWT"
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Token info check for token exchange",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed3c727e-dfae-4a1c-ac35-42c69d00594c",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"});\r",
+							"\r",
+							"if (pm.response.code === 200) {\r",
+							"    if (pm.response.to.have.header('Content-Type') ){\r",
+							"            if (pm.response.headers.get('Content-Type') == 'text/html; charset=iso-8859-15') {\r",
+							"                pm.test(\"Proxy interception\", function () {\r",
+							"                    pm.expect.fail(true);\r",
+							"                });\r",
+							"            }\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic OWJlOGFiZjktYjUzMy00NTNjLWE1NTMtMTA0NzUxOGJjNzUzOjUwNjlmNTNlLTE0ZDctNGU1OS1hM2U1LTMyM2QyNjQ1MDg2OA=="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "urn:ietf:params:oauth:grant-type:token-exchange",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "access_token",
+							"value": "{{access_token_exchange}}",
+							"type": "text"
+						},
+						{
+							"key": "subject_token_type",
+							"value": "urn:ietf:params:oauth:token-type:access_token",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{intra_oauth}}/oauth/tokeninfo",
+					"host": [
+						"{{intra_oauth}}"
+					],
+					"path": [
+						"oauth",
+						"tokeninfo"
+					]
+				},
+				"description": "Check token with the standart OpenInfo endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "5 - test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed3c727e-dfae-4a1c-ac35-42c69d00594c",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"});\r",
+							"\r",
+							"if (pm.response.code === 200) {\r",
+							"    if (pm.response.to.have.header('Content-Type') ){\r",
+							"            if (pm.response.headers.get('Content-Type') == 'text/html; charset=iso-8859-15') {\r",
+							"                pm.test(\"Proxy interception\", function () {\r",
+							"                    pm.expect.fail(true);\r",
+							"                });\r",
+							"            }\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "rest",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{inter_oauth}}/oauth/tokeninfo",
+					"host": [
+						"{{inter_oauth}}"
+					],
+					"path": [
+						"oauth",
+						"tokeninfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dfbb90d5-4c78-4d22-b346-4a7c3713703b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c429647a-b5f3-441c-87c5-31434832f3f5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
