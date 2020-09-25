@@ -1,0 +1,927 @@
+
+2020-09-25T12:13:28.336+0200    INFO    instance/beat.go:621    Home path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2] Config path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2] Data path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data] Logs path: [/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/logs]
+2020-09-25T12:13:28.337+0200    DEBUG   [beat]  instance/beat.go:673    Beat metadata path: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/meta.json
+2020-09-25T12:13:28.337+0200    INFO    instance/beat.go:629    Beat ID: cb595d1e-9392-4cdb-a42a-af003f173490
+2020-09-25T12:13:28.337+0200    DEBUG   [seccomp]       seccomp/seccomp.go:117  Loading syscall filter  {"seccomp_filter": {"no_new_privs":true,"flag":"tsync","policy":{"default_action":"errno","syscalls":[{"names":["accept","accept4","access","arch_prctl","bind","brk","chmod","clock_gettime","clone","close","connect","dup","dup2","epoll_create","epoll_create1","epoll_ctl","epoll_pwait","epoll_wait","exit","exit_group","fchdir","fchmod","fchown","fcntl","fdatasync","flock","fstat","fstatfs","fsync","ftruncate","futex","getcwd","getdents","getdents64","geteuid","getgid","getpeername","getpid","getppid","getrandom","getrlimit","getrusage","getsockname","getsockopt","gettid","gettimeofday","getuid","inotify_add_watch","inotify_init1","inotify_rm_watch","ioctl","kill","listen","lseek","lstat","madvise","mincore","mkdirat","mmap","mprotect","munmap","nanosleep","newfstatat","open","openat","pipe","pipe2","poll","ppoll","pread64","pselect6","pwrite64","read","readlink","readlinkat","recvfrom","recvmmsg","recvmsg","rename","renameat","rt_sigaction","rt_sigprocmask","rt_sigreturn","sched_getaffinity","sched_yield","sendfile","sendmmsg","sendmsg","sendto","set_robust_list","setitimer","setsockopt","shutdown","sigaltstack","socket","splice","stat","statfs","sysinfo","tgkill","time","tkill","uname","unlink","unlinkat","wait4","waitid","write","writev"],"action":"allow"}]}}}
+2020-09-25T12:13:28.337+0200    INFO    [seccomp]       seccomp/seccomp.go:124  Syscall filter successfully installed
+2020-09-25T12:13:28.337+0200    INFO    [beat]  instance/beat.go:957    Beat info       {"system_info": {"beat": {"path": {"config": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2", "data": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data", "home": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2", "logs": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/logs"}, "type": "traceability_agent", "uuid": "cb595d1e-9392-4cdb-a42a-af003f173490"}}}
+2020-09-25T12:13:28.337+0200    INFO    [beat]  instance/beat.go:966    Build info      {"system_info": {"build": {"commit": "unknown", "libbeat": "7.7.1", "time": "0001-01-01T00:00:00.000Z", "version": "0.0.14-8462dbc4"}}}
+2020-09-25T12:13:28.337+0200    INFO    [beat]  instance/beat.go:969    Go runtime info {"system_info": {"go": {"os":"linux","arch":"amd64","max_procs":1,"version":"go1.13.12"}}}
+2020-09-25T12:13:28.339+0200    INFO    [beat]  instance/beat.go:973    Host info       {"system_info": {"host": {"architecture":"x86_64","boot_time":"2020-06-19T09:34:42+02:00","containerized":false,"name":"s00vl9986565","ip":["127.0.0.1/8","10.244.82.13/24"],"kernel_version":"3.10.0-957.12.2.el7.x86_64","mac":["00:50:56:00:ac:2d"],"os":{"family":"redhat","platform":"rhel","name":"Red Hat Enterprise Linux Server","version":"7.6 (Maipo)","major":7,"minor":6,"patch":0,"codename":"Maipo"},"timezone":"CEST","timezone_offset_sec":7200,"id":"4048a22fffed4fea9531327e3da05f32"}}}
+2020-09-25T12:13:28.339+0200    INFO    [beat]  instance/beat.go:1002   Process info    {"system_info": {"process": {"capabilities": {"inheritable":null,"permitted":null,"effective":null,"bounding":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend"],"ambient":null}, "cwd": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2", "exe": "/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/traceability_agent", "name": "traceability_ag", "pid": 10300, "ppid": 14143, "seccomp": {"mode":"filter"}, "start_time": "2020-09-25T12:13:27.720+0200"}}}
+2020-09-25T12:13:28.339+0200    INFO    instance/beat.go:297    Setup Beat: traceability_agent; Version: 0.0.14-8462dbc4
+2020-09-25T12:13:28.339+0200    DEBUG   [beat]  instance/beat.go:323    Initializing output plugins
+2020-09-25T12:13:28.340+0200    INFO    [transport]     transport/proxy.go:70   proxy host: '10.175.113.3:1080'
+2020-09-25T12:13:30.215+0200    DEBUG   [apigw] apigw/eventprocessor.go:79      Event Processor Created with EnvironmentID: e4e6300771cab6270171cbc000540055
+2020-09-25T12:13:30.216+0200    DEBUG   [publisher]     pipeline/consumer.go:137        start pipeline event consumer
+2020-09-25T12:13:30.216+0200    INFO    [publisher]     pipeline/module.go:110  Beat name: s00vl9986565
+2020-09-25T12:13:30.216+0200    ERROR   fileset/modules.go:125  Not loading modules. Module directory not found: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/module
+2020-09-25T12:13:30.216+0200    WARN    beater/filebeat.go:152  Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2020-09-25T12:13:30.217+0200    INFO    instance/beat.go:438    traceability_agent start running.
+2020-09-25T12:13:30.217+0200    DEBUG   [test]  registrar/migrate.go:159        isFile(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry) -> false
+2020-09-25T12:13:30.217+0200    DEBUG   [test]  registrar/migrate.go:159        isFile() -> false
+2020-09-25T12:13:30.217+0200    DEBUG   [test]  registrar/migrate.go:152        isDir(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat) -> true
+2020-09-25T12:13:30.217+0200    DEBUG   [test]  registrar/migrate.go:159        isFile(/applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/meta.json) -> true
+2020-09-25T12:13:30.217+0200    DEBUG   [registrar]     registrar/migrate.go:51 Registry type '0' found
+2020-09-25T12:13:30.217+0200    DEBUG   [registrar]     registrar/registrar.go:125      Registry file set to: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json
+2020-09-25T12:13:30.217+0200    WARN    beater/filebeat.go:335  Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2020-09-25T12:13:30.218+0200    INFO    registrar/registrar.go:145      Loading registrar data from /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json
+2020-09-25T12:13:30.218+0200    INFO    registrar/registrar.go:152      States Loaded from registrar: 35
+2020-09-25T12:13:30.218+0200    INFO    beater/crawler.go:73    Loading Inputs: 1
+2020-09-25T12:13:30.219+0200    DEBUG   [input] log/config.go:204       recursive glob enabled
+2020-09-25T12:13:30.219+0200    DEBUG   [input] log/input.go:164        exclude_files: []. Number of states: 35
+2020-09-25T12:13:30.219+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.219+0200    DEBUG   [registrar]     registrar/registrar.go:278      Starting Registrar
+2020-09-25T12:13:30.219+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.219+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.219+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.219+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 35, After: 35, Pending: 0
+2020-09-25T12:13:30.219+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (35)
+2020-09-25T12:13:30.220+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:438107-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:84400 Timestamp:2020-09-25 11:43:19.669168058 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:438107-64810} TimeSeries:false}
+2020-09-25T12:13:30.220+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-09-25T12:13:30.220+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409274-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log Offset:699 Timestamp:2020-09-25 09:56:01.204103692 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409274-64810} TimeSeries:false}
+2020-09-25T12:13:30.220+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-09-25T12:13:30.220+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:409317-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log Offset:977 Timestamp:2020-09-25 09:56:01.220073654 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:409317-64810} TimeSeries:false}
+2020-09-25T12:13:30.220+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.220+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.220+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.220+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:438101-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:78001 Timestamp:2020-09-25 11:39:56.641917004 +0200 CEST TTL:-1ns Type:log Meta:map[] FileStateOS:438101-64810} TimeSeries:false}
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:185        input with previous states loaded: 4
+2020-09-25T12:13:30.220+0200    INFO    log/input.go:152        Configured paths: [/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log]
+2020-09-25T12:13:30.220+0200    INFO    input/input.go:114      Starting input of type: log; ID: 7013895810890088246
+2020-09-25T12:13:30.220+0200    INFO    beater/crawler.go:105   Loading and starting Inputs completed. Enabled inputs: 1
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:191        Start next scan
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:421        Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:511        Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log, offset: 699
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:565        File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-2.log
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:421        Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.220+0200    DEBUG   [input] log/input.go:494        Start harvester for new file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.221+0200    DEBUG   [harvester]     log/harvester.go:573    Setting offset for file based on seek: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.222+0200    DEBUG   [harvester]     log/harvester.go:559    Setting offset for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log. Offset: 0
+2020-09-25T12:13:30.222+0200    DEBUG   [harvester]     log/harvester.go:205    Harvester setup successful. Line terminator: 1
+2020-09-25T12:13:30.234+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 35 states written.
+2020-09-25T12:13:30.234+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.234+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.234+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 35, After: 35, Pending: 0
+2020-09-25T12:13:30.234+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (35)
+2020-09-25T12:13:30.234+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.234+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc0008916c0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:0 Timestamp:2020-09-25 12:13:30.220605302 +0200 CEST m=+1.900321061 TTL:-1ns Type:log Meta:map[] FileStateOS:438152-64810} TimeSeries:false}
+2020-09-25T12:13:30.234+0200    DEBUG   [harvester]     log/harvester.go:478    Update state: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log, offset: 0
+2020-09-25T12:13:30.234+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.234+0200    DEBUG   [input] log/input.go:421        Check file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-09-25T12:13:30.234+0200    DEBUG   [input] log/input.go:511        Update existing file for harvesting: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log, offset: 977
+2020-09-25T12:13:30.234+0200    DEBUG   [input] log/input.go:565        File didn't change: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-7.log
+2020-09-25T12:13:30.234+0200    DEBUG   [input] log/input.go:212        input states cleaned up. Before: 5, After: 5, Pending: 0
+2020-09-25T12:13:30.234+0200    INFO    log/harvester.go:297    Harvester started for file: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.234+0200    DEBUG   [harvester]     log/harvester.go:488    Drop line as it does not match any of the include patterns {"type":"header", "logCreationTime":"2020-09-25 12:10:04.944", "hostname":"s00vl9986565", "domainId":"8b7b5509-b2dd-4f94-8b36-c23166283cf1", "groupId":"group-2", "groupName":"PF-L2-qualif", "serviceId":"instance-3", "serviceName":"GW-hmsecureapig1", "version":"v7.6.2-Internal"}
+2020-09-25T12:13:30.247+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 35 states written.
+2020-09-25T12:13:30.248+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.248+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.248+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 35, After: 35, Pending: 0
+2020-09-25T12:13:30.248+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (35)
+2020-09-25T12:13:30.248+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.248+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:438107-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:84400 Timestamp:2020-09-25 12:13:30.219330525 +0200 CEST m=+1.899046285 TTL:0s Type:log Meta:map[] FileStateOS:438107-64810} TimeSeries:false}
+2020-09-25T12:13:30.248+0200    DEBUG   [input] log/input.go:233        Remove state for file as file removed or renamed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.262+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 35 states written.
+2020-09-25T12:13:30.262+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.262+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.262+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 35, After: 35, Pending: 0
+2020-09-25T12:13:30.262+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (35)
+2020-09-25T12:13:30.262+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.262+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id:438101-64810 Finished:true Fileinfo:<nil> Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:78001 Timestamp:2020-09-25 12:13:30.220400573 +0200 CEST m=+1.900116334 TTL:0s Type:log Meta:map[] FileStateOS:438101-64810} TimeSeries:false}
+2020-09-25T12:13:30.262+0200    DEBUG   [input] log/input.go:233        Remove state for file as file removed or renamed: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.276+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 35 states written.
+2020-09-25T12:13:30.276+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.276+0200    DEBUG   [input] file/states.go:68       New state added for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log
+2020-09-25T12:13:30.276+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.276+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (36)
+2020-09-25T12:13:30.276+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.277+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc0008916c0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:279 Timestamp:2020-09-25 12:13:30.220605302 +0200 CEST m=+1.900321061 TTL:-1ns Type:log Meta:map[] FileStateOS:438152-64810} TimeSeries:false}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 279,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028604929, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":80, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"e3ebe37b-af29-4837-8745-845868a6c57e\", \"org\":null, \"app\":null, \"method\":\"JWT Bearer\", \"status\":\"success\", \"duration\":80}], \"customMsgAtts\":{}, \"correlationId\":\"fcc16d5ffca6d6c4550c8ae8\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":562, \"bytesReceived\":872, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52540\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028604849, \"duration\":80, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"e3ebe37b-af29-4837-8745-845868a6c57e\", \"operation\":\"JWT Bearer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 1197
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028607951, \"path\":\"/fr/CPayAPIPublicH/v6/api/authenticate\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":2732, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"authorizeUsingPOST_2\", \"status\":\"success\", \"duration\":2718}], \"customMsgAtts\":{}, \"correlationId\":\"fdc16d5ffda6a82a32d3f59f\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/authenticate\", \"status\":200, \"statustext\":\"\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1313, \"bytesReceived\":527, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49832\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028605219, \"duration\":2732, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"authorizeUsingPOST_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/authenticate\", \"status\":200, \"statustext\":\"\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":560, \"bytesReceived\":1192, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34380\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028605246, \"duration\":2704, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"authorizeUsingPOST_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028608511, \"path\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":127, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getAccountUsingGET_1\", \"status\":\"success\", \"duration\":64}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f00a7959340989db0\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":822, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49838\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608384, \"duration\":127, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":701, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34394\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608452, \"duration\":57, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 2649
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 4185,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028608561, \"path\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":183, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getProfileUsingGET_1\", \"status\":\"success\", \"duration\":135}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5fffa6f13327190170\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1019, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49836\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608378, \"duration\":183, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":898, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34392\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608432, \"duration\":128, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}"
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 5724,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028608586, \"path\":\"/fr/CPayAPIPublicH/v6/api/animations/published\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":69, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getPublishedAnimationsUsingGET_2\", \"status\":\"success\", \"duration\":45}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f03a7e363ab879f64\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/animations/published\", \"status\":404, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":393, \"bytesReceived\":1500, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49844\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608517, \"duration\":69, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getPublishedAnimationsUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/animations/published\", \"status\":404, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1533, \"bytesReceived\":251, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34400\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608552, \"duration\":34, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getPublishedAnimationsUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 7226
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028608869, \"path\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":97, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getAccountUsingGET_1\", \"status\":\"success\", \"duration\":40}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f05a7239db029991e\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":822, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49848\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608772, \"duration\":97, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":701, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34404\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608842, \"duration\":26, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 8760,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028608917, \"path\":\"/fr/CPayAPIPrivateH/v6/api/notification\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":119, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getNotificationUsingGET_1\", \"status\":\"success\", \"duration\":75}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f06a75ddbbb0c864f\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/notification\", \"status\":404, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":393, \"bytesReceived\":1493, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49850\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608798, \"duration\":119, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getNotificationUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/notification\", \"status\":404, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1516, \"bytesReceived\":251, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34406\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608850, \"duration\":67, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getNotificationUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.277+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.277Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609129, \"path\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":631, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getOffersUsingGET_2\", \"status\":\"success\", \"duration\":619}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f01a75e708554bda6\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":5309, \"bytesReceived\":1534, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49842\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608498, \"duration\":631, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1567, \"bytesReceived\":5195, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34396\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608522, \"duration\":607, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "log": {
+    "offset": 10326,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent"
+  },
+  "log": {
+    "offset": 11753,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609209, \"path\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":521, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getOffersUsingGET_2\", \"status\":\"success\", \"duration\":500}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f04a710e8a9adfda4\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":538, \"bytesReceived\":1531, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49846\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608688, \"duration\":521, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1564, \"bytesReceived\":416, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34402\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608721, \"duration\":487, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}"
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "log": {
+    "offset": 13178,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609252, \"path\":\"/fr/CPayAPIPrivateH/v6/api/cashbacks\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":910, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getCashbackByConsumerUsingGET_1\", \"status\":\"success\", \"duration\":860}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5ffea6c9e5b639e736\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/cashbacks\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":688, \"bytesReceived\":1508, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49834\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608342, \"duration\":911, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCashbackByConsumerUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/cashbacks\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1531, \"bytesReceived\":566, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34390\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608400, \"duration\":852, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCashbackByConsumerUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 14755,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609317, \"path\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":818, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getOffersUsingGET_2\", \"status\":\"success\", \"duration\":794}], \"customMsgAtts\":{}, \"correlationId\":\"00c26d5f02a7c5c3dee5e754\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":11506, \"bytesReceived\":1554, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49840\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028608499, \"duration\":818, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1589, \"bytesReceived\":11400, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34398\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028608532, \"duration\":784, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 16184,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609609, \"path\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":81, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getAccountUsingGET_1\", \"status\":\"success\", \"duration\":41}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f0aa76e5fe5e17036\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":822, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49858\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609528, \"duration\":81, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":701, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34414\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609576, \"duration\":32, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 17718,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609612, \"path\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":511, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getOffersUsingGET_2\", \"status\":\"success\", \"duration\":484}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f07a736e4a8962326\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":6694, \"bytesReceived\":1557, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49852\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609100, \"duration\":512, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1592, \"bytesReceived\":6588, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34408\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609136, \"duration\":476, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 19145,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609702, \"path\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":601, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getOffersUsingGET_2\", \"status\":\"success\", \"duration\":558}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f08a7989adcef1ba8\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":6201, \"bytesReceived\":1537, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49854\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609101, \"duration\":601, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/offers\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1570, \"bytesReceived\":6087, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34410\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609152, \"duration\":549, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getOffersUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609713, \"path\":\"/fr/CPayAPIPublicH/v6/api/universes\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":311, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Public HOMOL ICP V6\", \"monitor\":true, \"client\":\"Pass Through\", \"org\":null, \"app\":null, \"method\":\"getUniversesUsingGET_1\", \"status\":\"success\", \"duration\":290}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f09a7621700b8f08e\", \"legs\":[{\"uri\":\"/fr/CPayAPIPublicH/v6/api/universes\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":2209, \"bytesReceived\":1505, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49856\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609402, \"duration\":311, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getUniversesUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/universes\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1522, \"bytesReceived\":2095, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34412\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609428, \"duration\":284, \"serviceName\":\"CPAY Public HOMOL ICP V6\", \"subject\":\"Pass Through\", \"operation\":\"getUniversesUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  },
+  "log": {
+    "offset": 20572,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 22017,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609872, \"path\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":91, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getAccountUsingGET_1\", \"status\":\"success\", \"duration\":34}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f0ca72a313fcf5c7a\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":822, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49862\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609780, \"duration\":93, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/account\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":701, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34418\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609846, \"duration\":26, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getAccountUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent"
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028609983, \"path\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":167, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getProfileUsingGET_1\", \"status\":\"success\", \"duration\":130}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f0da77c4cb4cefe59\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1019, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49864\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609816, \"duration\":167, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":898, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34420\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609860, \"duration\":122, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 23551,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  }
+}
+2020-09-25T12:13:30.278+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028610409, \"path\":\"/fr/CPayAPIPrivateH/v6/api/cashbacks\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":841, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getCashbackByConsumerUsingGET_1\", \"status\":\"success\", \"duration\":805}], \"customMsgAtts\":{}, \"correlationId\":\"01c26d5f0ba72c7be8fcc04c\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/cashbacks\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":688, \"bytesReceived\":1508, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49860\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028609567, \"duration\":842, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCashbackByConsumerUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/cashbacks\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1531, \"bytesReceived\":566, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34416\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028609608, \"duration\":796, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCashbackByConsumerUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 25090
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.278Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565"
+  },
+  "log": {
+    "offset": 26667,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028611214, \"path\":\"/oauth/token\", \"protocol\":\"http\", \"protocolSrc\":\"8091\", \"duration\":94, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"OAuth 2.0 Token Service\", \"monitor\":true, \"client\":\"bd2ab99f-d6c1-4720-ba2b-5437fa66daf0\", \"org\":null, \"app\":null, \"method\":\"JWT Bearer\", \"status\":\"success\", \"duration\":94}], \"customMsgAtts\":{}, \"correlationId\":\"03c26d5f0fa7719413971d1e\", \"legs\":[{\"uri\":\"/oauth/token\", \"status\":200, \"statustext\":\"OK\", \"method\":\"POST\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":642, \"bytesReceived\":962, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"52580\", \"localPort\":\"8091\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028611120, \"duration\":94, \"serviceName\":\"OAuth 2.0 Token Service\", \"subject\":\"bd2ab99f-d6c1-4720-ba2b-5437fa66daf0\", \"operation\":\"JWT Bearer\", \"type\":\"http\", \"finalStatus\":\"Pass\"}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 27585,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028612222, \"path\":\"/fr/CPayApiBI/v3/api/part/users/37351/transactions\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":641, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPayAPIBI ICP\", \"monitor\":true, \"client\":\"9bfae1f9-e18a-4a9e-80d6-742689f18fac\", \"org\":\"Budget Insight\", \"app\":\"test secret 2\", \"method\":\"getTransactionsUsingGET_1\", \"status\":\"success\", \"duration\":587}], \"customMsgAtts\":{}, \"correlationId\":\"03c26d5f10a7f53d85e6b69d\", \"legs\":[{\"uri\":\"/fr/CPayApiBI/v3/api/part/users/37351/transactions\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":487, \"bytesReceived\":621, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49872\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028611581, \"duration\":641, \"serviceName\":\"CPayAPIBI ICP\", \"subject\":\"9bfae1f9-e18a-4a9e-80d6-742689f18fac\", \"operation\":\"getTransactionsUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/part/users/37351/transactions\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":581, \"bytesReceived\":364, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34428\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028611642, \"duration\":579, \"serviceName\":\"CPayAPIBI ICP\", \"subject\":\"9bfae1f9-e18a-4a9e-80d6-742689f18fac\", \"operation\":\"getTransactionsUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 29147,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028615069, \"path\":\"/fr/CPayAPIPrivateH/v6/api/card-features-templates/active-template\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":208, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getCurrentTemplateUsingGET_1\", \"status\":\"success\", \"duration\":153}], \"customMsgAtts\":{}, \"correlationId\":\"06c26d5f15a75cd9f5fc7365\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/card-features-templates/active-template\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":4406, \"bytesReceived\":1520, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49882\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028614861, \"duration\":208, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCurrentTemplateUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/card-features-templates/active-template\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1543, \"bytesReceived\":4291, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34446\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028614924, \"duration\":144, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCurrentTemplateUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028615079, \"path\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":209, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getProfileUsingGET_1\", \"status\":\"success\", \"duration\":137}], \"customMsgAtts\":{}, \"correlationId\":\"06c26d5f16a73da24ee99c90\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1019, \"bytesReceived\":1488, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49884\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028614870, \"duration\":209, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/profile\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1511, \"bytesReceived\":898, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34448\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028614948, \"duration\":130, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getProfileUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490"
+  },
+  "log": {
+    "offset": 30807,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "log": {
+    "offset": 32346,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028615350, \"path\":\"/fr/CPayAPIPrivateH/v6/api/cards/model\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":78, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getCardUsingGET_2\", \"status\":\"success\", \"duration\":39}], \"customMsgAtts\":{}, \"correlationId\":\"07c26d5f17a762612417a44d\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/cards/model\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":752, \"bytesReceived\":1532, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49886\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028615272, \"duration\":78, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCardUsingGET_2\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/cards/model\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1555, \"bytesReceived\":631, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34450\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028615318, \"duration\":32, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getCardUsingGET_2\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  },
+  "agent": {
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "agent": {
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4",
+    "type": "traceability_agent"
+  },
+  "log": {
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    },
+    "offset": 33883
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028615659, \"path\":\"/fr/CPayAPIPrivateH/v6/api/general-terms-of-uses/card/49/publish\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":121, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getPublishGeneralTermsOfUseByCardUsingGET_1\", \"status\":\"success\", \"duration\":77}], \"customMsgAtts\":{}, \"correlationId\":\"07c26d5f19a7496ba3d3177f\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/general-terms-of-uses/card/49/publish\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":4664, \"bytesReceived\":1518, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49892\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028615538, \"duration\":121, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getPublishGeneralTermsOfUseByCardUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/general-terms-of-uses/card/49/publish\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1541, \"bytesReceived\":4550, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34454\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028615590, \"duration\":68, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getPublishGeneralTermsOfUseByCardUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [processors]    processing/processors.go:187    Publish event: {
+  "@timestamp": "2020-09-25T10:13:30.279Z",
+  "@metadata": {
+    "beat": "traceability_agent",
+    "type": "_doc",
+    "version": "0.0.14-8462dbc4"
+  },
+  "agent": {
+    "type": "traceability_agent",
+    "ephemeral_id": "e3de0a72-536a-4828-9048-e1fe89dbce5d",
+    "hostname": "s00vl9986565",
+    "id": "cb595d1e-9392-4cdb-a42a-af003f173490",
+    "version": "0.0.14-8462dbc4"
+  },
+  "ecs": {
+    "version": "1.5.0"
+  },
+  "log": {
+    "offset": 35580,
+    "file": {
+      "path": "/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log"
+    }
+  },
+  "message": "{\"type\":\"transaction\", \"time\":1601028615782, \"path\":\"/fr/CPayAPIPrivateH/v6/api/card-features/published-version/49\", \"protocol\":\"https\", \"protocolSrc\":\"8065\", \"duration\":256, \"status\":\"success\", \"serviceContexts\":[{\"service\":\"CPAY Private Homol ICP V6\", \"monitor\":true, \"client\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"org\":\"BNPP PF - Digital Factory\", \"app\":\"CPAY Qual\", \"method\":\"getPublishedCardFeaturesByCardUsingGET_1\", \"status\":\"success\", \"duration\":216}], \"customMsgAtts\":{}, \"correlationId\":\"07c26d5f18a7296dbb7839ed\", \"legs\":[{\"uri\":\"/fr/CPayAPIPrivateH/v6/api/card-features/published-version/49\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":3379, \"bytesReceived\":1515, \"remoteName\":\"10.241.246.23\", \"remoteAddr\":\"10.241.246.23\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"49890\", \"localPort\":\"8065\", \"sslsubject\":null, \"leg\":0, \"timestamp\":1601028615526, \"duration\":256, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getPublishedCardFeaturesByCardUsingGET_1\", \"type\":\"http\", \"finalStatus\":\"Pass\"}, {\"uri\":\"/api/card-features/published-version/49\", \"status\":200, \"statustext\":\"\", \"method\":\"GET\", \"vhost\":null, \"wafStatus\":0, \"bytesSent\":1538, \"bytesReceived\":3265, \"remoteName\":\"cpay-ws-rec-pfc.staging.echonet\", \"remoteAddr\":\"10.241.173.14\", \"localAddr\":\"10.244.82.13\", \"remotePort\":\"80\", \"localPort\":\"34452\", \"sslsubject\":null, \"leg\":1, \"timestamp\":1601028615582, \"duration\":199, \"serviceName\":\"CPAY Private Homol ICP V6\", \"subject\":\"db292f45-a442-4ff4-af3e-f73b51ed531d\", \"operation\":\"getPublishedCardFeaturesByCardUsingGET_1\", \"type\":\"http\", \"finalStatus\":null}]}",
+  "input": {
+    "type": "log"
+  },
+  "host": {
+    "name": "s00vl9986565"
+  }
+}
+2020-09-25T12:13:30.279+0200    DEBUG   [harvester]     log/harvester.go:488    Drop line as it does not match any of the include patterns {"type":"system", "time":1601028656060, "diskUsed":85, "instCpu":1, "sysCpu":100, "instMem":2509364, "sysMem":7843040, "sysMemTotal":7977904}
+2020-09-25T12:13:30.279+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc0008916c0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:37403 Timestamp:2020-09-25 12:13:30.220605302 +0200 CEST m=+1.900321061 TTL:-1ns Type:log Meta:map[] FileStateOS:438152-64810} TimeSeries:false}
+2020-09-25T12:13:30.279+0200    DEBUG   [harvester]     log/harvester.go:488    Drop line as it does not match any of the include patterns {"type":"system", "time":1601028716162, "diskUsed":85, "instCpu":2, "sysCpu":93, "instMem":2509276, "sysMem":7855228, "sysMemTotal":7977904}
+2020-09-25T12:13:30.279+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc0008916c0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:37544 Timestamp:2020-09-25 12:13:30.220605302 +0200 CEST m=+1.900321061 TTL:-1ns Type:log Meta:map[] FileStateOS:438152-64810} TimeSeries:false}
+2020-09-25T12:13:30.279+0200    DEBUG   [harvester]     log/harvester.go:488    Drop line as it does not match any of the include patterns {"type":"system", "time":1601028776213, "diskUsed":85, "instCpu":1, "sysCpu":8, "instMem":2509116, "sysMem":7735552, "sysMemTotal":7977904}
+2020-09-25T12:13:30.279+0200    DEBUG   [publisher]     pipeline/client.go:220  Pipeline client receives callback 'onFilteredOut' for event: {Timestamp:0001-01-01 00:00:00 +0000 UTC Meta:null Fields:null Private:{Id: Finished:false Fileinfo:0xc0008916c0 Source:/applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log Offset:37684 Timestamp:2020-09-25 12:13:30.220605302 +0200 CEST m=+1.900321061 TTL:-1ns Type:log Meta:map[] FileStateOS:438152-64810} TimeSeries:false}
+2020-09-25T12:13:30.279+0200    DEBUG   [harvester]     log/log.go:107  End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-09-25T12:13:30.295+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 36 states written.
+2020-09-25T12:13:30.295+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.295+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.295+0200    DEBUG   [state] file/states.go:118      State removed for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log because of older: 0s
+2020-09-25T12:13:30.295+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 36, After: 35, Pending: 0
+2020-09-25T12:13:30.295+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (35)
+2020-09-25T12:13:30.295+0200    DEBUG   [acker] beater/acker.go:64      stateful ack    {"count": 1}
+2020-09-25T12:13:30.302+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 35 states written.
+2020-09-25T12:13:30.302+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.302+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.302+0200    DEBUG   [state] file/states.go:118      State removed for /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log because of older: 0s
+2020-09-25T12:13:30.302+0200    DEBUG   [registrar]     registrar/registrar.go:346      Registrar states cleaned up. Before: 35, After: 34, Pending: 0
+2020-09-25T12:13:30.302+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (34)
+2020-09-25T12:13:30.307+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 34 states written.
+2020-09-25T12:13:30.307+0200    DEBUG   [registrar]     registrar/registrar.go:356      Processing 1 events
+2020-09-25T12:13:30.307+0200    DEBUG   [registrar]     registrar/registrar.go:326      Registrar state updates processed. Count: 1
+2020-09-25T12:13:30.307+0200    DEBUG   [registrar]     registrar/registrar.go:411      Write registry file: /applis/11623-apim0-apimanagement/axway-7.6.2/amplifyAgent2/data/registry/filebeat/data.json (34)
+2020-09-25T12:13:30.312+0200    DEBUG   [registrar]     registrar/registrar.go:404      Registry file updated. 34 states written.
+2020-09-25T12:13:31.279+0200    INFO    [publisher_pipeline_output]     pipeline/output.go:101  Connecting to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453)
+2020-09-25T12:13:31.279+0200    DEBUG   [traceability]  traceability/sync.go:96 connect
+2020-09-25T12:13:31.279+0200    WARN    [tls]   tlscommon/tls_config.go:83      SSL/TLS verifications disabled.
+2020-09-25T12:13:31.280+0200    DEBUG   [harvester]     log/log.go:107  End of file reached: /applis/11623-apim0-apimanagement/axway-7.6.2/applications/apigateway/events/group-2_instance-3.log; Backoff now.
+2020-09-25T12:13:31.612+0200    INFO    [publisher_pipeline_output]     pipeline/output.go:111  Connection to backoff(tcp://ingestion-lumberjack.datasearch.axway.com:453) established
+2020-09-25T12:13:31.612+0200    DEBUG   [traceability]  apimanager/apimanager.go:100    API events for OAuth 2.0 Token Service are not tracked, don't send to Central
+2020-09-25T12:13:31.612+0200    DEBUG   [traceability]  apimanager/apimanager.go:100    API events for CPAY Public HOMOL ICP V6 are not tracked, don't send to Central
+This message and any attachments (the "message") is
+intended solely for the intended addressees and is confidential. 
+If you receive this message in error,or are not the intended recipient(s), 
+please delete it and any copies from your systems and immediately notify
+the sender. Any unauthorized view, use that does not comply with its purpose, 
+dissemination or disclosure, either whole or partial, is prohibited. Since the internet 
+cannot guarantee the integrity of this message which may not be reliable, BNP PARIBAS 
+(and its subsidiaries) shall not be liable for the message if modified, changed or falsified. 
+Do not print this message unless it is necessary, consider the environment.
+----------------------------------------------------------------------------------------------------------------------------------
+Ce message et toutes les pieces jointes (ci-apres le "message") 
+sont etablis a l'intention exclusive de ses destinataires et sont confidentiels.
+Si vous recevez ce message par erreur ou s'il ne vous est pas destine,
+merci de le detruire ainsi que toute copie de votre systeme et d'en avertir
+immediatement l'expediteur. Toute lecture non autorisee, toute utilisation de 
+ce message qui n'est pas conforme a sa destination, toute diffusion ou toute 
+publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer
+l'integrite de ce message electronique susceptible d'alteration, BNP Paribas 
+(et ses filiales) decline(nt) toute responsabilite au titre de ce message dans l'hypothese
+ou il aurait ete modifie, deforme ou falsifie. 
+N'imprimez ce message que si necessaire, pensez a l'environnement.
