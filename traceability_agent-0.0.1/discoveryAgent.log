@@ -1,0 +1,521 @@
+
+[pfexec@s00vl9986565 logs]$ cat discovery_agent.log
+{"level":"debug","msg":"Approval mode set: manual","time":"2020-09-25T18:40:31+02:00"}
+{"level":"info","msg":"Starting Discovery agent for V7 APIGateway (0.0.14-27ad6509)","time":"2020-09-25T18:40:31+02:00"}
+{"level":"debug","msg":"no password, assuming unencrypted key","package":"apicauth","time":"2020-09-25T18:40:31+02:00"}
+{"level":"debug","msg":"token to be used: eyJhbGciOiJSUzI1NiIsImtpZCI6Im9WMHkyUDBwTnUta01oMWtsa1htaDJyV0x6aVVzNTJSMnZlcGUwOGFqWGMiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJodHRwczovL2xvZ2luLmF4d2F5LmNvbS9hdXRoL3JlYWxtcy9Ccm9rZXIiLCJleHAiOjE2MDEwNTIwOTEsImp0aSI6IjExMWMwNTllLWEyN2MtNGNkOC1hODcwLTNjOWQ5MWJlZWU5OCIsImlhdCI6MTYwMTA1MjAzMSwiaXNzIjoidXJuOmlldGY6cGFyYW1zOm9hdXRoOmNsaWVudC1hc3NlcnRpb24tdHlwZTpqd3QtYmVhcmVyOkRPU0FfYmRjODExNjQ2NmQyNGE2MThmMGYzYjIxZGM5YTBhNWUiLCJzdWIiOiJET1NBX2JkYzgxMTY0NjZkMjRhNjE4ZjBmM2IyMWRjOWEwYTVlIn0.SwTyIlMPjn207-Ac-z4cZaWPEpVsP7mjyONf8-r7LJihRc0fuMFzmIQNUhKUSW_6yJBkjxmHHJUdNE3yU_rDT3J_fRw8PIWwEw4xmR0Urh-ffiQZlaoF8eJJnQvq1B9QLkQ-VaTnAhsUKcgcsO6ylTdcnwHhPxN6O5AnpKDmkzo","package":"apicauth","time":"2020-09-25T18:40:31+02:00"}
+{"level":"debug","msg":"Environment attribute: x-axway-agent is already set.","time":"2020-09-25T18:40:33+02:00"}
+{"level":"debug","msg":"AMPLIFY Central - OK","time":"2020-09-25T18:40:33+02:00"}
+{"level":"debug","msg":"API Manager - OK","time":"2020-09-25T18:40:34+02:00"}
+{"level":"debug","msg":"no password, assuming unencrypted key","package":"apicauth","time":"2020-09-25T18:40:34+02:00"}
+{"level":"debug","msg":"token to be used: eyJhbGciOiJSUzI1NiIsImtpZCI6Im9WMHkyUDBwTnUta01oMWtsa1htaDJyV0x6aVVzNTJSMnZlcGUwOGFqWGMiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJodHRwczovL2xvZ2luLmF4d2F5LmNvbS9hdXRoL3JlYWxtcy9Ccm9rZXIiLCJleHAiOjE2MDEwNTIwOTQsImp0aSI6ImUxMzMxYjY2LWU3ZjEtNDY4Ny1iMTg4LWI4OTY0NjZmMzJmYyIsImlhdCI6MTYwMTA1MjAzNCwiaXNzIjoidXJuOmlldGY6cGFyYW1zOm9hdXRoOmNsaWVudC1hc3NlcnRpb24tdHlwZTpqd3QtYmVhcmVyOkRPU0FfYmRjODExNjQ2NmQyNGE2MThmMGYzYjIxZGM5YTBhNWUiLCJzdWIiOiJET1NBX2JkYzgxMTY0NjZkMjRhNjE4ZjBmM2IyMWRjOWEwYTVlIn0.ggHz_c_m1UCQgOMqe_2OsQTWwW-OnGeFxGasCIhFdKsPbL8fxGTFDyWmKZYqwoaiuZ7hzzgX7-1gE211CISpT0euWI1LMx5T7Ea6fzx9BbFgMI1bxTR4FjHKMxU-5r082xvbI7PQAAuNyY7L-Ia4Wpqs6Rz5apl3qykJECbMA-k","package":"apicauth","time":"2020-09-25T18:40:34+02:00"}
+{"level":"debug","msg":"Received message for notifier PublishedFrontEndProxyList: sending to 1 subscribers","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: true]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"info","msg":"Found previously published frontend proxy: DEmo Amplify Central","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Sending proxy with an update severity of MAJOR","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: true]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"info","msg":"Found previously published frontend proxy: SED ARVAL_BE_RISK","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Sending proxy with an update severity of MAJOR","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Received message for notifier UpdatedPublishedFrontEndProxy: sending to 1 subscribers","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Received message for notifier UpdatedPublishedFrontEndProxy: sending to 1 subscribers","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Filter condition evaluation [Condition: (tag.Import == true), Result: false]","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"Backend API had resource type of swagger20 retrieving swagger version 2.0","time":"2020-09-25T18:40:35+02:00"}
+{"level":"debug","msg":"agent name EnterpriseEdgeGatewayDiscoveryAgent: ","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"build time 20200922200511: ","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Courtier' with applications: [Courtier test2 Coutier - test technique Test interne]","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"HTTP response errors: [ {\n    \"status\" : 404,\n    \"title\" : \"Not found error\",\n    \"detail\" : \"Resource d576622d-b53e-4df0-bafc-d226a13b9db8 of kind APIService not found in scope bnpp-pf-qa-fr.\",\n    \"meta\" : {\n      \"instanceId\" : \"e4e090bc6dcc528f016ddbbec82d1ba3\",\n      \"tenantId\" : \"102899\",\n      \"authenticatedUserId\" : \"DOSA_bdc8116466d24a618f0f3b21dc9a0a5e\",\n      \"transactionId\" : \"3179f3fb-7688-4587-a948-d7c1d2df1b31\"\n    }\n  } ]","time":"2020-09-25T18:40:36+02:00"}
+{"level":"error","msg":"[Error Code 3056] - error updating service in AMPLIFY Central for frontend proxy DEmo Amplify Central: 404","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"Backend API had resource type of wsdl","time":"2020-09-25T18:40:36+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'CRE10FI' with applications: [mycre10fi]","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"agent name EnterpriseEdgeGatewayDiscoveryAgent: ","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"build time 20200922200511: ","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"HTTP response errors: [ {\n    \"status\" : 404,\n    \"title\" : \"Not found error\",\n    \"detail\" : \"Resource 6f04eca4-c55c-4706-9542-3c0dad5208ae of kind APIService not found in scope bnpp-pf-qa-fr.\",\n    \"meta\" : {\n      \"instanceId\" : \"e4e090bc6dcc528f016ddbbec82d1ba3\",\n      \"tenantId\" : \"102899\",\n      \"authenticatedUserId\" : \"DOSA_bdc8116466d24a618f0f3b21dc9a0a5e\",\n      \"transactionId\" : \"47ab0931-8bdc-4887-bad0-5e0db860891d\"\n    }\n  } ]","time":"2020-09-25T18:40:37+02:00"}
+{"level":"error","msg":"[Error Code 3056] - error updating service in AMPLIFY Central for frontend proxy SED ARVAL_BE_RISK: 404","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Rouaix Finances' with applications: [Rouaix Staging Prequalif REC]","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Relation Métier - Filiales et Partenaires France' with applications: []","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:37+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - UK' with applications: [Test-Application DiligenSe-PF-UK-RunningAccount ]","time":"2020-09-25T18:40:38+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:38+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB BMCI DIGITAL' with applications: [BMCI MEDICALE]","time":"2020-09-25T18:40:38+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:38+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP Cardif Germany' with applications: [DevApp TestAPP 2 Testclient]","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Atos Worldline' with applications: []","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Armatis' with applications: [Postman]","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:39+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Siclid France' with applications: []","time":"2020-09-25T18:40:40+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:40+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IFS API STORE' with applications: [API STORE IFS TEST IFS API STORE]","time":"2020-09-25T18:40:40+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:40+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'dt-society' with applications: []","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Monext Opposition' with applications: [JWT_M2R_MONEXT]","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Meilleurtaux.com' with applications: [App Souscription Credit Immobilier]","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:41+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Consors Finanz' with applications: [CF App Simulator]","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF' with applications: [VIG VIGILANCE BDDF VIG-Q]","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNP Test' with applications: []","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:42+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Neymo' with applications: []","time":"2020-09-25T18:40:43+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:43+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Bulgaria' with applications: [API KEY Buglaria]","time":"2020-09-25T18:40:43+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:43+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Belgique' with applications: []","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB DSI RA' with applications: []","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'EVOLLIS' with applications: [Testing Application Test POSTman v2 Test Mobil Evollis Test RCT test 3]","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:44+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Galeries Lafayette' with applications: [GL_APP]","time":"2020-09-25T18:40:45+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:45+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Carrefour Banque' with applications: [Auth_FE TEST_FE test CB HomeBanking App FE C4BQ acces financement express]","time":"2020-09-25T18:40:45+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:45+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Lemonway' with applications: []","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP CIB Risk' with applications: [MyCreditApp TrafficLight FYP_TEST MyCreditApp]","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP Cardif Colombie' with applications: [CORE_Claims Test Test_Col Lizzar Alfredo Rivas Quintero]","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:46+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Monext Authentication' with applications: [GetInfo OrchestrateurMonext]","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Wintergreen' with applications: []","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB BMCI CB' with applications: []","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:47+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF T\u0026S' with applications: [Démonstrations T\u0026S]","time":"2020-09-25T18:40:48+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:48+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Conformite' with applications: [Ikea Web App]","time":"2020-09-25T18:40:48+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:48+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Bourse des Crédits' with applications: [Appli Bourse Credit]","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Payzen/Lyra' with applications: [VADS]","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - P2A' with applications: [TEST IOGA WS POSTMAN CofinogaWebRC Box auto International-Buyers]","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:49+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - RCCI Vente' with applications: [ZSOICON0 - Search Details Contract METEOR FGA-Test APICreateContractsMETEOR APIDebtConsolidationLoans API ZSOSEPE0 ZSOLICO0 - Search Details Contracts Person METEOR ListAppliMarc API ZSOMOPE1 DEV - Create Contracts METEOR APILeadRC APIInternalPersonsCreation APISearchDetailsListPersons CourtierTest TestRECF TSORESR0 - Search Subjects Contract Project METEOR API ZSOLIPE0 Appli test pour J Masson APISCALScanList APIInternalPersonsUpdate RisquesPerson]","time":"2020-09-25T18:40:50+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:50+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Community' with applications: [Express Bank  SlimMedical foo Test PPweShop BMCI_MEDICALE campEmailing test]","time":"2020-09-25T18:40:50+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:50+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'KEYLIANCE' with applications: [By-Soluce]","time":"2020-09-25T18:40:51+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:51+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'CAFPI' with applications: [CAFPI_IMMO]","time":"2020-09-25T18:40:51+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:51+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Free Energie' with applications: []","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB Maroc' with applications: [Slim medical Old RATAMA BMCI_IMMO_SAB NEW RATAMA (CB)]","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Impact Finances' with applications: [Saisie en ligne]","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:52+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'UNIPRET' with applications: [Passerelle]","time":"2020-09-25T18:40:53+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:53+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'IN\u0026FI' with applications: [compa-rac]","time":"2020-09-25T18:40:53+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:53+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - United Partnership' with applications: []","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF Retail - Digital customer' with applications: [IOGA]","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Pentest' with applications: [Pentest PFaaS]","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:54+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Maisons du Monde' with applications: []","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Wordline Demat' with applications: [netdemat_v2_rce]","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'LCF La Réunion' with applications: [Genius]","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:55+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'PHYSARO' with applications: [TABPHYSARO]","time":"2020-09-25T18:40:56+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:56+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'TEST IT DAYS' with applications: [App renault test IT DAYS]","time":"2020-09-25T18:40:56+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:56+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'AAA_TEST_PFAAS' with applications: [AAA_APPLICATION_TEST_PFAAS Mon application de test]","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF Back Credit' with applications: [Entrée Directe Surendettement Moyen de paiement]","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'French Private Mortgage' with applications: []","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:57+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Relation Metier Auto' with applications: [TestPerfVamsVR Test Perf PARDEM003253875]","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Marketplace auto' with applications: [SmileLogin SmileTest MarketPlaceAuto WS Relais SmileTest2 MarketPlace Auto Connector Application TestSmile Api-Relais- Integration-Smile]","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Juniper' with applications: []","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:58+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'ENERCONFORT' with applications: [APP_HS]","time":"2020-09-25T18:40:59+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:59+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Fidelity Information Services' with applications: [Test_App]","time":"2020-09-25T18:40:59+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:40:59+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'ALLIANCE' with applications: [Passerelle PreQualif]","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP Cardif France' with applications: [ICE Bodemer]","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Nextalk' with applications: [SVI]","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:00+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Credimedia' with applications: [weboffice]","time":"2020-09-25T18:41:01+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:01+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'COMEX' with applications: [APPLI SUZUKI hyperfront test APPLI DE LUDO TEST TO DELETE Appli Slimane]","time":"2020-09-25T18:41:01+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:01+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Relation Métier Distribution' with applications: [Test Blossom test_credential H Demat Worldline LoanOrderMgt/orders test VIPERA - Homologation Activate Wintergreen My application mobile Passage Contexte my appli web]","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF Nordics' with applications: []","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Pays Bas' with applications: [Cloverleaf Director SCAL test Sunny Oranges RAT Test1]","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:02+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Stripe' with applications: []","time":"2020-09-25T18:41:03+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:03+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'MeilleurTaux Solution' with applications: [MeilleurTaux Solution Qualification PreQualification Passerelle banque v1 PreQualification API]","time":"2020-09-25T18:41:03+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:03+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Distrib et Demat' with applications: [Services LOM WG Souscription VAT pour WM]","time":"2020-09-25T18:41:04+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:04+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'OMEO' with applications: [TEST_API_JMC]","time":"2020-09-25T18:41:04+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:04+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - DiligenSE' with applications: [Quick refence tutorial My test SED_HOMOL Quick reference demo test grp SOAP UI SOAP Neos pour tests]","time":"2020-09-25T18:41:05+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:05+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'LeaseOffers Portugal' with applications: [LeaseOffers]","time":"2020-09-25T18:41:05+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:05+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Relation Metier OPS' with applications: [Test Gaelle]","time":"2020-09-25T18:41:06+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:06+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Services métiers' with applications: [Test FEX Arnaud Test interne Evo]","time":"2020-09-25T18:41:06+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:06+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP ARVAL' with applications: [PRC_ARVAL]","time":"2020-09-25T18:41:07+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:07+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'IOBnet' with applications: [FOKTEST IOBNETSYGMA Tarik-app]","time":"2020-09-25T18:41:07+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:07+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - ISF' with applications: [ISF-PT ISF-UK ISF-BE ISF-PL ISF-IT StockAudits-test ISF-FR ISF-SP ISF-MX ISF-DE]","time":"2020-09-25T18:41:08+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:08+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Crédit Unique' with applications: [SYRACUSE]","time":"2020-09-25T18:41:08+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:08+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Services metiers' with applications: [Vipera-Wk Vipera-St]","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'IRB Tunisie' with applications: [RataTunisieQualif]","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BPLS' with applications: [Rat@tuLS]","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:09+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Carrefour location' with applications: [Carrefour Location LLD]","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Digital Factory' with applications: [PricePosterBatch-Gueudet CPAY Dev CPay Homol Com In we-are-adm cooclub iSF Stock - Pilote PricePosterBatchM IT Services For Client - ChangeCom - External PricePosterBatch-Gueudet-Test PFForward PFAPIHUB IT Services For Client - SLM - External Ski QUAL IT Services For Client - SLM - Internal CPAY Qual IT Services For Client - ChangeCom - Internal keypeople Digital Gateway]","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF Fronts Credits' with applications: [Buy my home (Qualif) Buy my home (Dev)]","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:10+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Empruntis' with applications: [iregroup_dev empruntis Test_iRegroup]","time":"2020-09-25T18:41:11+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:11+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'VIPERA' with applications: [IDCM-wk]","time":"2020-09-25T18:41:11+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:11+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BPLS DIP-Software' with applications: [Web DMM]","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP Cardif Italia' with applications: [My Cardif]","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Honda E Seller' with applications: [eSeller Team Dev]","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:12+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB GSC POLAND' with applications: [Ratama Ratama Ratama DZ]","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'FIINZ' with applications: [SHUTTLE]","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP Cardif Chili' with applications: [Portal de Liquidadores]","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:13+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'UPM PF - PF 15 HYPERVISION' with applications: []","time":"2020-09-25T18:41:14+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:14+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'MAJOREL' with applications: []","time":"2020-09-25T18:41:14+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:14+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Alto Informatique' with applications: []","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'AAA ORGA TO DELETE' with applications: []","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Premista' with applications: [Qualification test]","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:15+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'ARAF' with applications: [araf_prequal_dev passerelle_sygma_dev]","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'CREDISCOPE' with applications: []","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Payline' with applications: [Payline Presto PaylineTest Payline-dev]","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:16+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Crédit Immobilier Direct' with applications: [Client API]","time":"2020-09-25T18:41:17+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:17+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF Fronts Credits Pro ER' with applications: [CJ_FIPRO_INT DefiPRO_Qual omnipro CJ_FIPRO_QUAL]","time":"2020-09-25T18:41:17+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:17+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Courtiers Web' with applications: [Courtier-Web]","time":"2020-09-25T18:41:18+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:18+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'WEBHELP' with applications: [API TEST3]","time":"2020-09-25T18:41:18+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:18+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization '7Twenty' with applications: [7twentyBOT]","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Cooperative Financiere de Credit' with applications: [Visio]","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - TEC' with applications: [Test PCBF CB]","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:19+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - CreditClick' with applications: [cetelem immo API Calcul Simulation WS Reprise Simulation CCK Test POC-GXY-01 TEST BOB]","time":"2020-09-25T18:41:20+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:20+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Divido' with applications: [Divido]","time":"2020-09-25T18:41:21+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:21+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Suzuki France' with applications: [Financement Site Marque Suzuki]","time":"2020-09-25T18:41:22+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:22+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Finapole' with applications: [Passerelle]","time":"2020-09-25T18:41:22+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:22+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - DCM' with applications: [CBS API V2 CBS Portugal dev API CBS API Brazil development Chatbot API Portugal Staging test Test Eirini Brazil Test Eirini Bulgaria CBS API Portugal Production]","time":"2020-09-25T18:41:23+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:23+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Cofinoga' with applications: []","time":"2020-09-25T18:41:23+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:23+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Digital' with applications: [Application mobile-Wk Backendappmobile_api_account]","time":"2020-09-25T18:41:24+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:24+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - DATALAB' with applications: [CBS Portugal Staging CBS Portugal QA]","time":"2020-09-25T18:41:24+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:24+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP CET ROMANIA' with applications: [Test VAMS]","time":"2020-09-25T18:41:25+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:25+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Computop' with applications: [test presto Paygate_CetelemPresto]","time":"2020-09-25T18:41:25+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:25+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Site Web IB' with applications: []","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Crédit Conseil de France' with applications: [api-passerelle]","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Api Team' with applications: [Test JWT Romain Test David TEST APPLCIATION test_mail3 ISF Stock Store Test BDDF Portal-test PF Test test lbo courtier Speed TEST_JWT_JAVA_CLIENT test lboo TEST EB test test carrefour test lbo PF API Team Appli GL Test LBO BNP CloverLeaf toto Appli mobile CCF 1 Pentest LoanOrderMgt Hypervision SED 2 Pentest SED Test TEST_JWT MesTests totop Demo Ping App 3 Pentest BriqueDigitaleIogaApi  Evollis 4 Pentest API Courtier V2 GER CLAIMS APPL test test demo test portal fix BNPP PF Sandbox PF API Team - Token exchange]","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:26+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Hyundai' with applications: [Hyundai]","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Hipay' with applications: []","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Budget Insight' with applications: [test secret 2]","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:27+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP BDDF SDI401 WEBTEAM' with applications: []","time":"2020-09-25T18:41:28+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:28+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Partners Finances' with applications: [Sygma]","time":"2020-09-25T18:41:29+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:29+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB BMCI' with applications: []","time":"2020-09-25T18:41:29+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:29+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Person Organization' with applications: []","time":"2020-09-25T18:41:30+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:30+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BPLS Totalsoft' with applications: [BPLS Totalsoft]","time":"2020-09-25T18:41:31+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:31+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP IRB APCI' with applications: [App Test APCI_SN My test APCI_CI APCI_GN APCI_BF]","time":"2020-09-25T18:41:31+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:31+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'BNPP PF - Monétique' with applications: [test monétique tpecible tpecible]","time":"2020-09-25T18:41:32+02:00"}
+{"level":"debug","msg":"Received message for notifier NewOrgToAppRelationship: sending to 1 subscribers","time":"2020-09-25T18:41:32+02:00"}
+{"level":"debug","msg":"creating subscriptionSchema for organization 'Tuconénergie' with applications: []","time":"2020-09-25T18:41:33+02:00"}
+This message and any attachments (the "message") is
+intended solely for the intended addressees and is confidential. 
+If you receive this message in error,or are not the intended recipient(s), 
+please delete it and any copies from your systems and immediately notify
+the sender. Any unauthorized view, use that does not comply with its purpose, 
+dissemination or disclosure, either whole or partial, is prohibited. Since the internet 
+cannot guarantee the integrity of this message which may not be reliable, BNP PARIBAS 
+(and its subsidiaries) shall not be liable for the message if modified, changed or falsified. 
+Do not print this message unless it is necessary, consider the environment.
+----------------------------------------------------------------------------------------------------------------------------------
+Ce message et toutes les pieces jointes (ci-apres le "message") 
+sont etablis a l'intention exclusive de ses destinataires et sont confidentiels.
+Si vous recevez ce message par erreur ou s'il ne vous est pas destine,
+merci de le detruire ainsi que toute copie de votre systeme et d'en avertir
+immediatement l'expediteur. Toute lecture non autorisee, toute utilisation de 
+ce message qui n'est pas conforme a sa destination, toute diffusion ou toute 
+publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer
+l'integrite de ce message electronique susceptible d'alteration, BNP Paribas 
+(et ses filiales) decline(nt) toute responsabilite au titre de ce message dans l'hypothese
+ou il aurait ete modifie, deforme ou falsifie. 
+N'imprimez ce message que si necessaire, pensez a l'environnement.
